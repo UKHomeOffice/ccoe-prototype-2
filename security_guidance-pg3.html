@@ -772,7 +772,7 @@
       <div class="app-pane__subnav">
         <nav class="app-subnav">
 
-          <h4 class="app-subnav__theme">Operational excellence</h4>
+          <h4 id="side-nav" class="app-subnav__theme">Operational excellence</h4>
           <ul class="app-subnav__section">
 
             <li class="app-subnav__section-item">
@@ -817,12 +817,14 @@
           <ul class="app-subnav__section">
 
             <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="reliability_guidance-pg1.html">What
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
+                href="reliability_guidance-pg1.html">What
                 is the reliability pillar?</a>
             </li>
 
             <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="reliability_guidance-pg2.html">Some
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
+                href="reliability_guidance-pg2.html">Some
                 sub-header for more reliability info</a>
             </li>
 
@@ -836,12 +838,14 @@
           <ul class="app-subnav__section">
 
             <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="performance_guidance-pg1.html">What
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
+                href="performance_guidance-pg1.html">What
                 is the performance pillar?</a>
             </li>
 
             <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="performance_guidance-pg2.html">This
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
+                href="performance_guidance-pg2.html">This
                 sub-header is for Performance</a>
             </li>
 
@@ -878,122 +882,177 @@
       <div class="app-pane__content">
         <main id="main-content" class="app-content" role="main">
 
-          <div class="govuk-breadcrumbs ">
-            <ol class="govuk-breadcrumbs__list">
-              <li class="govuk-breadcrumbs__list-item">
-                <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
-              </li>
-              <li class="govuk-breadcrumbs__list-item">
-                <a class="govuk-breadcrumbs__link" href="cloud_guidance.html">Cloud guidance</a>
-              </li>
-            </li>
-            <li class="govuk-breadcrumbs__list-item">
-              <a class="govuk-breadcrumbs__link" href="security_guidance-pg3.html">Access keys</a>
-            </li>
-            </ol>
-          </div>
-
           <div class="govuk-grid-row">
+
+            <div class="govuk-breadcrumbs ">
+              <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+                </li>
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="cloud_guidance.html">Cloud guidance</a>
+                </li>
+                </li>
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="security_guidance-pg3.html">Access keys</a>
+                </li>
+              </ol>
+            </div>
+
             <span class="govuk-caption-xl">Security</span>
             <h1 id="h1_title" class="govuk-heading-xl">Access keys</h1>
 
-            <h3 class="govuk-heading-m">What are access keys?</h3>
-            <p class="govuk-body">AWS access keys are long-term credentials for Identity and Access Management (IAM) users. 
-              Access keys consist of an ID and a secret and provide programmatic access. Access keys can be used to sign programmatic
+            <h2 class="govuk-heading-l">What are access keys?</h2>
+            <p class="govuk-body">AWS access keys are long-term credentials for Identity and Access Management (IAM)
+              users.
+              Access keys consist of an ID and a secret and provide programmatic access. Access keys can be used to sign
+              programmatic
               requests to the AWS CLI or AWS API (directly or using the AWS SDK).</p>
 
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
             <h3 class="govuk-heading-m">The importance of rotating access keys</h3>
-            <p class="govuk-body">The importance of Amazon Web Services (AWS) access keys and rotation of them can be seen through their inclusion in the <a
-              href="https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-aws-account/"
-              target="_blank">AWS top 10 security items</a> to improve in your AWS account and <a
-              href="https://d1.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf"
-              target="_blank">CIS AWS Foundation Benchmark</a>. The Public Cloud Team encourage the use of more secure and robust
-               access key policy for the Home Office 
+            <p class="govuk-body">The importance of Amazon Web Services (AWS) access keys and rotation of them can be
+              seen through their inclusion in the <a
+                href="https://aws.amazon.com/blogs/security/top-10-security-items-to-improve-in-your-aws-account/"
+                target="_blank">AWS top 10 security items</a> to improve in your AWS account and <a
+                href="https://d1.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf"
+                target="_blank">CIS AWS Foundation Benchmark</a>. The Public Cloud Team encourage the use of more secure
+              and robust
+              access key policy for the Home Office
               to educate users, application, and platform teams of best practice and to encourage good behaviours. </p>
 
-              <h3 class="govuk-heading-m">How to rotate access keys</h3>
-              <p class="govuk-body">To rotate your access keys, you need to login to the Identity account using your normal credentials. AWS have produced <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey"
-                target="_blank">step-by-step guidance for rotating access keys</a> using the Console, 
-                the CLI and the API to rotate any user access keys. <br>If you do not have the correct permissions, you can view our guidance on <a href="aws_iam_account_requests-pg2.html">how to a raise request with the Public Cloud Team</a> and request permissions.</p>  
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
 
-                <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                     <h3>Access keys in the Home Office</h3>
-                    </span>
-                  </summary>
-  
-                  <p class="govuk-body">The Public Cloud Team (PCT) team inherited the management of AWS IAM from ACP. As of January 2021, 
-                there was still 71 users with AWS Access Keys older than the approved 90-day limit and another 71 users who have not logged in for over 90 days. 
-                There were also another 28 users who did not have Multi Factor Authentication MFA enabled.</p>
-              <p class="govuk-body">This was a risk to the Home Office as we were not proactively managing inactive accounts or keys older than the recommended 90 days old, 
-                providing a greater window of opportunity for a threat actor if an AWS Access Key was to be compromised, through being lost, cracked or stolen. </p>
-  
-                <p class="govuk-body">To address this the Public Cloud Team are planning to deploy a Lambda to perform 2 functions:</p>
-                <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                  <li>
-                    <b>Delete any access keys older than 90 days old for any user</b> 
-                  </li>
-                  <li>
-                    <b>Move users who have not logged in to the AWS Central/Login accounts for more than 90 days into the disabled user's group in AWS</b> 
-                  </li>
-                </ul>
-            
-                <h3 class="govuk-heading-m">Risks</h3>
-                <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                  <li>
-                    <b>Static credentials pose a security and compliance risk</b> as it means they can be used on an ongoing basis if they have been lost, stolen, cracked, or published to a public repository. At present access keys are used by both users and applications/services.
-                  </li>
-                  <li>
-                    One of the main risks is if an access key is lost, published, cracked or stolen it provides a window of opportunity for someone to use the keys.<b> Rotating the keys aims to make this window of opportunity smaller and stops ongoing access</b>. 
-                  </li>
-                  <li>
-                    AWS recommend the use of temporary access keys through the use of the <b>Security Token Service instead of using long term access keys</b>. 
-                  </li>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-                </ul>
-     
+            <h3 class="govuk-heading-m">How to rotate access keys</h3>
+            <p class="govuk-body">To rotate your access keys, you need to login to the Identity account using your
+              normal credentials. AWS have produced <a
+                href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey"
+                target="_blank">step-by-step guidance for rotating access keys</a> using the Console,
+              the CLI and the API to rotate any user access keys. <br>If you do not have the correct permissions, you
+              can view our guidance on <a href="aws_iam_account_requests-pg2.html">how to a raise request with the
+                Public Cloud Team</a> and request permissions.</p>
+
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            <h3 class="govuk-heading-m">Access keys in the Home Office</h3>
+            <p class="govuk-body">The Public Cloud Team (PCT) team inherited the management of AWS IAM from ACP. As
+              of
+              January 2021,
+              there was still 71 users with AWS Access Keys older than the approved 90-day limit and another 71
+              users
+              who have not logged in for over 90 days.
+              There were also another 28 users who did not have Multi Factor Authentication MFA enabled.</p>
+            <p class="govuk-body">This was a risk to the Home Office as we were not proactively managing inactive
+              accounts or keys older than the recommended 90 days old,
+              providing a greater window of opportunity for a threat actor if an AWS Access Key was to be
+              compromised,
+              through being lost, cracked or stolen. </p>
+
+            <p class="govuk-body">To address this the Public Cloud Team are planning to deploy a Lambda to perform 2
+              functions:</p>
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+              <li>
+                <b>Delete any access keys older than 90 days old for any user</b>
+              </li>
+              <li>
+                <b>Move users who have not logged in to the AWS Central/Login accounts for more than 90 days into
+                  the
+                  disabled user's group in AWS</b>
+              </li>
+            </ul>
+
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            <h3 class="govuk-heading-m">Risks</h3>
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+              <li>
+                <b>Static credentials pose a security and compliance risk</b> as it means they can be used on an
+                ongoing basis if they have been lost, stolen, cracked, or published to a public repository. At
+                present
+                access keys are used by both users and applications/services.
+              </li>
+              <li>
+                One of the main risks is if an access key is lost, published, cracked or stolen it provides a window
+                of opportunity for someone to use the keys.<b> Rotating the keys aims to make this window of
+                  opportunity smaller and stops ongoing access</b>.
+              </li>
+              <li>
+                AWS recommend the use of temporary access keys through the use of the <b>Security Token Service
+                  instead of using long term access keys</b>.
+              </li>
+            </ul>
+
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
             <h3 class="govuk-heading-m">Policy</h3>
-            <p class="govuk-body">The PCT are looking at implementing the following policy for access keys, to reduce
+            <p class="govuk-body">The PCT are looking at implementing the following policy for access keys, to
+              reduce
               the risks to the Home
-              Office. We will not force business areas to comply with the policy. The policy will allow us to highlight
+              Office. We will not force business areas to comply with the policy. The policy will allow us to
+              highlight
               where there are potential risks in the organisation.</p>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>AWS access keys should not be used where there is a valid alternative available using temporary access
+              <li>AWS access keys should not be used where there is a valid alternative available using temporary
+                access
                 keys</li>
-              <li>AWS access keys must only be created where there is a clear requirement for programmatic access</li>
-              <li>AWS access keys must be rotated at least every <b>90 days, if not more often</b>, either through the
+              <li>AWS access keys must only be created where there is a clear requirement for programmatic access
+              </li>
+              <li>AWS access keys must be rotated at least every <b>90 days, if not more often</b>, either through
+                the
                 AWS Console, Command Line Interface (CLI), or Application Programming Interface (API) </li>
               <li>Individual AWS access keys must not be shared internally or externally with any other user or
                 organisation, that is not the intended recipient of the access key</li>
-              <li>AWS access keys must be securely stored and approved as part of a service's security assurance</li>
-              <li>AWS access keys must not be embedded directly into code or repositories, tools provided by the AWS SDK
+              <li>AWS access keys must be securely stored and approved as part of a service's security assurance
+              </li>
+              <li>AWS access keys must not be embedded directly into code or repositories, tools provided by the AWS
+                SDK
                 and command line tools (e.g. AWS credentials file) should be used instead. <a
                   href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html"
                   target="_blank">Further documentation for using temporary</a></li>
-              <li>In the event an AWS access key is published to the internet (e.g. GitHub), shared or lost you should
+              <li>In the event an AWS access key is published to the internet (e.g. GitHub), shared or lost you
+                should
                 follow the relevant incident management process and notify <a
                   href="mailto:public.cloud@homeoffice.gov.uk">public.cloud@homeoffice.gov.uk</a> immediately. The
                 access key should also be made inactive and deleted.</li>
-              <li>Permissions for individual users, services or applications using AWS access keys should be limited,
-                based on least privilege and regularly reviewed (administrative permissions should be given as a last
+              <li>Permissions for individual users, services or applications using AWS access keys should be
+                limited,
+                based on least privilege and regularly reviewed (administrative permissions should be given as a
+                last
                 resort)</li>
-              <li>Multi Factor Authentication (MFA) must be enabled for any individual IAM user that has programmatic
+              <li>Multi Factor Authentication (MFA) must be enabled for any individual IAM user that has
+                programmatic
                 access and AWS access keys provided to them</li>
             </ul>
-            </details>
-            
-            <details class="govuk-details" data-module="govuk-details">
-              <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                 <h3>Temporary access keys</h3>
-                </span>
-              </summary>
+
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            <h3 class="govuk-heading-m">Temporary access keys</h3>
             <p class="govuk-body">At present the use of AWS access keys provide high levels of access with long lived
               credentials. However,
-              in most cases long lived credentials are not required, and the access requirements can be fulfilled using
+              in most cases long lived credentials are not required, and the access requirements can be fulfilled
+              using
               short-lived temporary security credentials.</p>
-            <p class="govuk-body">Temporary security credentials are generated using the <b>Security Token Service</b> through
+            <p class="govuk-body">Temporary security credentials are generated using the <b>Security Token Service</b>
+              through
               the assumption of
               IAM roles. Along with an access key ID and secret access key, a security token is also created that
               indicates when the credentials expire. An example of the flow is provided below.</p>
@@ -1003,26 +1062,32 @@
             <p class="govuk-body">The primary benefit of temporary access keys provided by STS is that it limits the
               potential blast radius
               of any security incident, as the credentials provided are short lived. This means if they are accidently
-              shared, published or stolen they will soon time out without user intervention. Where it is required though
+              shared, published or stolen they will soon time out without user intervention. Where it is required
+              though
               temporary security credentials can be revoked as detailed. <a
                 href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_revoke-sessions.html"
                 target="_blank">How to revoke IAM role temporary security credentials</a></p>
-                </details>
 
-                <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                     <h3>AWS services guidance</h3>
-                    </span>
-                  </summary>
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
             <h3 class="govuk-heading-m">Amazon EC2</h3>
-            <p class="govuk-body">Where an application or AWS CLI script is running on an EC2 instance do not use access
+            <p class="govuk-body">Where an application or AWS CLI script is running on an EC2 instance do not use
+              access
               keys directly in
-              the application. Instead define an IAM role that has the appropriate permissions for your application and
+              the application. Instead define an IAM role that has the appropriate permissions for your application
+              and
               attach it to the EC2 instance to be used. For applications using the AWS SDKs and CLI temporary
               credentials are retrieved from the role automatically. <a
                 href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html"
                 target="_blank">IAM roles for EC2</a>.</p>
+
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
             <h3 class="govuk-heading-m">AWS Lambda</h3>
             <p class="govuk-body">Each Lambda function has an execution role created in IAM that provides the function
@@ -1033,30 +1098,43 @@
                 href="https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html" target="_blank">AWS
                 Lambda execution role</a>.</p>
 
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
             <h3 class="govuk-heading-m">IAM USERS</h3>
             <p class="govuk-body">The majority of IAM users do not require access keys that provide them with high
               levels of permissions,
-              or multiple access keys to access multiple AWS accounts. Instead following best practice IAM users should
+              or multiple access keys to access multiple AWS accounts. Instead following best practice IAM users
+              should
               be provided with a single AWS access key that provides a minimal level of access, this reduces the blast
               radius of long-lived access keys being published to the internet, shared or stolen as they will have
               restricted access. When users require privileged access, they should assume a role which will grant them
               temporary credentials as per figure 1. This can be used both within the same account that the IAM user
               exists in and to provide cross account access.</p>
-                </details>
+
+            <!-- Hidden back to nav link </a> -->
+            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
             <a href="#top" class="govuk-link">Back to top</a>
+
           </div>
 
         </main>
 
       </div>
-      <div class="app-back-to-top app-back-to-top--hidden" data-module="app-back-to-top">
+
+      <!-- <div class="app-back-to-top app-back-to-top--hidden" data-module="app-back-to-top">
         <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#top">
           <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg"
             width="13" height="17" viewBox="0 0 13 17">
             <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
           </svg>Back to top
         </a>
-      </div>
+      </div> -->
 
     </div>
 
