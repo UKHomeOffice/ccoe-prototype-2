@@ -60,11 +60,12 @@
             </span>
           </a>
         </div>
-        <div class="app-site-search" data-module="app-search"
+        <!-- <div class="app-site-search" data-module="app-search"
           data-search-index="/search-index-e675b1e463f677c88b84bbabe62f6038.json">
           <label class="govuk-visually-hidden" for="app-site-search__input">Search Design system</label>
           <a class="app-site-search__link govuk-link" href="/sitemap">Sitemap</a>
-        </div>
+        </div> -->
+        <input type="text" id="headingSearch" onkeyup="headingSearchFunction()" placeholder="Search for a heading" title="Type in a name">
         <div class="app-header-mobile-nav-toggler-wrapper">
           <button id="app-mobile-nav-toggler"
             class="govuk-button app-header-mobile-nav-toggler js-app-mobile-nav-toggler" aria-controls="app-mobile-nav">
@@ -854,25 +855,25 @@
         <main id="main-content" class="app-content" role="main">
 
           <div class="govuk-grid-row">
-            <h1 id="h1_title" class="govuk-heading-xl">Home Office - Cloud Centre of Excellence (HO-CCoE)</h1>
+            <h1 id="headings" class="govuk-heading-xl">Home Office - Cloud Centre of Excellence (HO-CCoE)</h1>
 
             <p class="govuk-body-l">This service has been created by the Public Cloud Team (PCT) and it is replacing the
               Public Cloud confluence area. The HO-CCoE has been designed to support Home Office employees that use or
               have an interest in the cloud.</p>
 
-            <h2 id="service_overview" class="govuk-heading-l">Service overview</h2>
+            <h2 id="headings" class="govuk-heading-l">Service overview</h2>
             <p class="govuk-body">The main sections of the service include:</p>
             <h3 class="govuk-heading-m">Cloud training</h3>
             <p class="govuk-body">This section of the service shows the <a href="cloud_training.html"
                 class="govuk-link">cloud training available</a> and how to book training. It also has a breakdown of
               Amazon Web Services (AWS) and Microsoft Azure’s training and certification pathways.</p>
 
-            <h3 class="govuk-heading-m">Cloud guidance</h3>
+            <h3 id="headings" class="govuk-heading-m">Cloud guidance</h3>
             <p class="govuk-body">This section of the service has Home Office <a href="cloud_guidance.html"
                 class="govuk-link">cloud related guidance</a>. We divided the guidance in to ‘The Five Pillars of the
               Well-Architected Framework’ from AWS and Azure best practice guidance.</p>
 
-            <h3 class="govuk-heading-m">Cloud services</h3>
+            <h3 id="headings" class="govuk-heading-m">Cloud services</h3>
             <p class="govuk-body">This section of the service shows the <a href="public_cloud_services.html"
                 class="govuk-link">different services</a> that the Public Cloud Team offers. This includes AWS IAM which
               shows you how to get started in AWS and how to modify your existing account cloud account.</p>
@@ -882,7 +883,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-            <h2 id="getting_in_touch" class="govuk-heading-l">Getting in touch</h2>
+            <h2 id="headings" class="govuk-heading-l">Getting in touch</h2>
             <p class="govuk-body">The Public Cloud Team are an agile team based in Manchester and Croydon. Our roles in
               the Home Office
               include:</p>
@@ -1025,6 +1026,44 @@
   <!--[if lt IE 9]>
     <script src="/javascripts/application-ie8-5a2cfeaee9daeca7d49c5835fd89f009.js"></script>
   <![endif]-->
+
+  <script>
+    function headingSearchFunction() {
+        var input, filter, h3, i, txtValue;
+        input = document.getElementById("headingSearch");
+        filter = input.value.toUpperCase();
+        h3 = document.getElementByTagName("headings");
+        for (i = 0; i < h3.length; i++) {
+            h3 = h3[i].getElementsByTagName("h3")[0];
+            txtValue = h3.textContent || h3.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                h3[i].style.display = "";
+            } else {
+                h3[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+
+    <!-- <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script> -->
+
 
 </body>
 
