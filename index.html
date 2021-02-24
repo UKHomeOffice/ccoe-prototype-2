@@ -65,7 +65,8 @@
           <label class="govuk-visually-hidden" for="app-site-search__input">Search Design system</label>
           <a class="app-site-search__link govuk-link" href="/sitemap">Sitemap</a>
         </div> -->
-        <input type="text" id="headingSearch" onkeyup="headingSearchFunction()" placeholder="Search for a heading" title="Type in a name">
+        <input type="text" id="headingSearch" onkeyup="headingSearchFunction()" placeholder="Search for a heading"
+          title="Type in a name">
         <div class="app-header-mobile-nav-toggler-wrapper">
           <button id="app-mobile-nav-toggler"
             class="govuk-button app-header-mobile-nav-toggler js-app-mobile-nav-toggler" aria-controls="app-mobile-nav">
@@ -769,157 +770,97 @@
       </ul>
     </nav>
 
-    <div class="app-pane__body app-width-container">
-      <div class="app-pane__subnav">
-        <nav class="app-subnav">
-
-          <h4 id="side-nav" class="app-subnav__theme" style="text-align:center;">Public Cloud Team Logo</h4>
-
-          <img style="border: none;" src="images/turtle_sticker.svg" alt="Public Cloud Team Logo">
-
-          <!-- <li class="app-subnav__section-item app-subnav__section-item--current">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="/styles/layout/">Layout</a>
-
-              <ul class="app-subnav__section app-subnav__section--nested">
-
-
-                <li class="app-subnav__section-item">
-                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                    href="/styles/layout/#screen-size">
-                    Screen size
-                  </a>
-                </li>
-
-                <li class="app-subnav__section-item">
-                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                    href="/styles/layout/#common-layouts">
-                    Common layouts
-                  </a>
-                </li>
-
-                <li class="app-subnav__section-item">
-                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                    href="/styles/layout/#building-your-own-layout">
-                    Building your own layout
-                  </a>
-                </li>
-
-                <li class="app-subnav__section-item">
-                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                    href="/styles/layout/#page-wrappers">
-                    Page wrappers
-                  </a>
-                </li>
-
-                <li class="app-subnav__section-item">
-                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                    href="/styles/layout/#grid-system">
-                    Grid system
-                  </a>
-                </li>
-
-                <li class="app-subnav__section-item">
-                  <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                    href="/styles/layout/#override-how-elements-display">
-                    Override how elements display
-                  </a>
-                </li>
-
-              </ul>
-
-            </li>
-
-            <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="/styles/page-template/">Page
-                template</a>
-
-            </li>
-
-            <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="/styles/spacing/">Spacing</a>
-
-            </li>
-
-            <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                href="/styles/typography/">Typography</a>
-
-            </li> -->
-
-        </nav>
-
+    <div class="app-masthead">
+      <div class="app-width-container">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds-from-desktop">
+            <h1 class="govuk-heading-xl app-masthead__title">Supporting Home Office cloud users</h1>
+            <p class="app-masthead__description">This system will help cloud users find guidance, book cloud training
+              and use Public Cloud Team (PCT) services.</p>
+          </div>
+        </div>
       </div>
+    </div>
+
+
+    <div class="app-pane__body app-width-container">
 
       <!-- Start of main body -->
       <div class="app-pane__content">
-        <main id="main-content" class="app-content" role="main">
+        <main id="main-content" class="app-content" role="main" style="padding-left: 0px;">
 
           <div class="govuk-grid-row">
-            <h1 id="headings" class="govuk-heading-xl">Home Office - Cloud Centre of Excellence (HO-CCoE)</h1>
 
-            <p class="govuk-body-l">This service has been created by the Public Cloud Team (PCT) and it is replacing the
-              Public Cloud confluence area. The HO-CCoE has been designed to support Home Office employees that use or
-              have an interest in the cloud.</p>
+            <div class="govuk-grid-column-one-third">
+              <h2 class="govuk-heading-l">Cloud training</h2>
+              <p class="govuk-body">Book cloud training for you or your team throiugh our cloud providers</p>
+              <a href="#" class="govuk-link">Browse Cloud training</a>
+            </div>
 
-            <h2 id="headings" class="govuk-heading-l">Service overview</h2>
-            <p class="govuk-body">The main sections of the service include:</p>
-            <h3 class="govuk-heading-m">Cloud training</h3>
-            <p class="govuk-body">This section of the service shows the <a href="cloud_training.html"
-                class="govuk-link">cloud training available</a> and how to book training. It also has a breakdown of
-              Amazon Web Services (AWS) and Microsoft Azure’s training and certification pathways.</p>
+            <div class="govuk-grid-column-one-third">
+              <h2 class="govuk-heading-l">Cloud guidance</h2>
+              <p class="govuk-body">View bespoke Home Office Cloud guidance</p>
+              <a href="#" class="govuk-link">Browse Cloud guidance</a>
+            </div>
 
-            <h3 id="headings" class="govuk-heading-m">Cloud guidance</h3>
-            <p class="govuk-body">This section of the service has Home Office <a href="cloud_guidance.html"
-                class="govuk-link">cloud related guidance</a>. We divided the guidance in to ‘The Five Pillars of the
-              Well-Architected Framework’ from AWS and Azure best practice guidance.</p>
-
-            <h3 id="headings" class="govuk-heading-m">Cloud services</h3>
-            <p class="govuk-body">This section of the service shows the <a href="public_cloud_services.html"
-                class="govuk-link">different services</a> that the Public Cloud Team offers. This includes AWS IAM which
-              shows you how to get started in AWS and how to modify your existing account cloud account.</p>
-
-            <!-- Hidden back to nav link </a> -->
-            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
-
-            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-            <h2 id="headings" class="govuk-heading-l">Getting in touch</h2>
-            <p class="govuk-body">The Public Cloud Team are an agile team based in Manchester and Croydon. Our roles in
-              the Home Office
-              include:</p>
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>Governing the use of cloud across the department.</li>
-              <li>Enabling teams to access the cloud and ensure that cloud accounts are secured and monitored.</li>
-              <li>Provide support and guidance to make better use of public cloud services from our cloud providers, AWS
-                &
-                Azure.</li>
-            </ul>
-
-            <p class="govuk-body">This is a live service, and we will be updating and improving the service regularly.
-              For
-              any other
-              queries
-              or support you need that hasn’t been included on this service please contact: <a
-                href="mailto:public.cloud@homeoffice.gov.uk">public.cloud@homeoffice.gov.uk</a></p>
-
-            <!-- Hidden back to nav link </a> -->
-            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
-
-            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-            <a href="#top" class="govuk-link">Back to top</a>
-
-            <div style="background-color: orange;" class="app-contact-panel">
-              <h2 class="app-contact-panel__heading">Need help?</h2>
-
-              <p class="govuk-body app-contact-panel__body">
-                If you’ve got a question about the Cloud Center of Excellence, <a class="govuk-link" href="#">contact
-                  the
-                  team</a>.
-              </p>
+            <div class="govuk-grid-column-one-third">
+              <h2 class="govuk-heading-l">PCT services</h2>
+              <p class="govuk-body">View how to create Identity and Access Management (IAM) account requests</p>
+              <a href="#" class="govuk-link">Browse Public Cloud services</a>
             </div>
 
           </div>
+
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+          <!-- <div class="govuk-breadcrumbs">
+              <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="index.html">CCoE (Home)</a>
+                </li>
+              </ol>
+            </div> -->
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds" style="padding-top: 35px;">
+              <!-- <h1 class="govuk-heading-xl">Public Cloud Team</h1> -->
+              <!-- <h1 style="display: flex; justify-content: center; align-items: center; height: 300px;"
+                class="govuk-heading-xl">Public Cloud Team</h1> -->
+              <h2 class="govuk-heading-l">Public Cloud Team</h2>
+              <p class="govuk-body-l">This service has been created by the Public Cloud Team (PCT) and it is replacing the
+                Public Cloud confluence area.</p>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+              <img style="border: none; padding: none; max-width: 200px;" src="images/turtle_sticker.svg" alt="Public Cloud Team Logo">
+            </div>
+          </div>
+
+          
+          <h2 id="service_overview" class="govuk-heading-l">About us</h2>
+          <p class="govuk-body">The Public Cloud Team are an agile team based in Manchester and Croydon. Our roles in
+            the Home Office include:</p>
+          <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li>Governing the use of cloud across the department</li>
+            <li>Enabling teams to access the cloud and ensure that cloud accounts are secured and monitored</li>
+            <li>Provide support and guidance to make better use of public cloud services from our cliud providers, AWS &
+              Azure</li>
+          </ul>
+
+          <p class="govuk-body">This is a live service, and we will be updating and improving the service regularly. For
+            any other queries or support you need that hasn't been included on this service please contact: <a
+              href="mailto:public.cloud@homeoffice.gov.uk">public.cloud@homeoffice.gov.uk</a></p>
+
+          <a href="#top" class="govuk-link">Back to top</a>
+
+          <div class="app-contact-panel">
+            <h2 class="app-contact-panel__heading">Need help?</h2>
+            <p class="govuk-body app-contact-panel__body">If you’ve got a question about the Cloud Center of
+              Excellence, <a class="govuk-link" href="#">contact the team</a>.
+            </p>
+          </div>
+
+          <div style="background-color: orange;" class="app-contact-panel"></div>
 
         </main>
 
@@ -1029,23 +970,23 @@
 
   <script>
     function headingSearchFunction() {
-        var input, filter, h3, i, txtValue;
-        input = document.getElementById("headingSearch");
-        filter = input.value.toUpperCase();
-        h3 = document.getElementByTagName("headings");
-        for (i = 0; i < h3.length; i++) {
-            h3 = h3[i].getElementsByTagName("h3")[0];
-            txtValue = h3.textContent || h3.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                h3[i].style.display = "";
-            } else {
-                h3[i].style.display = "none";
-            }
+      var input, filter, h3, i, txtValue;
+      input = document.getElementById("headingSearch");
+      filter = input.value.toUpperCase();
+      h3 = document.getElementByTagName("headings");
+      for (i = 0; i < h3.length; i++) {
+        h3 = h3[i].getElementsByTagName("h3")[0];
+        txtValue = h3.textContent || h3.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          h3[i].style.display = "";
+        } else {
+          h3[i].style.display = "none";
         }
+      }
     }
-    </script>
+  </script>
 
-    <!-- <script>
+  <!-- <script>
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
