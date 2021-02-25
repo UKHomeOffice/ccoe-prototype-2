@@ -907,7 +907,7 @@
               users.
               Access keys consist of an ID and a secret and provide programmatic access. Access keys can be used to sign
               programmatic
-              requests to the AWS CLI or AWS API (directly or using the AWS SDK).</p>
+              requests to the AWS Command Line Interface (CLI) or AWS Application Programming Interface (API).</p>
 
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
@@ -962,12 +962,12 @@
               functions:</p>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
               <li>
-                <b>Delete any access keys older than 90 days old for any user</b>
+                Delete any access keys older than 90 days old for any user
               </li>
               <li>
-                <b>Move users who have not logged in to the AWS Central/Login accounts for more than 90 days into
+                Move users who have not logged in to the AWS Central/Login accounts for more than 90 days into
                   the
-                  disabled user's group in AWS</b>
+                  disabled user's group in AWS
               </li>
             </ul>
 
@@ -979,19 +979,19 @@
             <h3 class="govuk-heading-m">Risks</h3>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
               <li>
-                <b>Static credentials pose a security and compliance risk</b> as it means they can be used on an
+                Static credentials pose a security and compliance risk as it means they can be used on an
                 ongoing basis if they have been lost, stolen, cracked, or published to a public repository. At
                 present
                 access keys are used by both users and applications/services.
               </li>
               <li>
                 One of the main risks is if an access key is lost, published, cracked or stolen it provides a window
-                of opportunity for someone to use the keys.<b> Rotating the keys aims to make this window of
-                  opportunity smaller and stops ongoing access</b>.
+                of opportunity for someone to use the keys. Rotating the keys aims to make this window of
+                  opportunity smaller and stops ongoing access .
               </li>
               <li>
-                AWS recommend the use of temporary access keys through the use of the <b>Security Token Service
-                  instead of using long term access keys</b>.
+                AWS recommend the use of temporary access keys through the use of the Security Token Service
+                  instead of using long term access keys .
               </li>
             </ul>
 
@@ -1013,7 +1013,7 @@
                 keys</li>
               <li>AWS access keys must only be created where there is a clear requirement for programmatic access
               </li>
-              <li>AWS access keys must be rotated at least every <b>90 days, if not more often</b>, either through
+              <li>AWS access keys must be rotated at least every 90 days, if not more often , either through
                 the
                 AWS Console, Command Line Interface (CLI), or Application Programming Interface (API) </li>
               <li>Individual AWS access keys must not be shared internally or externally with any other user or
@@ -1051,7 +1051,7 @@
               in most cases long lived credentials are not required, and the access requirements can be fulfilled
               using
               short-lived temporary security credentials.</p>
-            <p class="govuk-body">Temporary security credentials are generated using the <b>Security Token Service</b>
+            <p class="govuk-body">Temporary security credentials are generated using the Security Token Service 
               through
               the assumption of
               IAM roles. Along with an access key ID and secret access key, a security token is also created that
