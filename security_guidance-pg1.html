@@ -777,8 +777,7 @@
 
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                href="operational_guidance-pg1.html">What
-                is the Op-Ex pillar?</a>
+                href="operational_guidance-pg1.html">Operational excellence pillar</a>
             </li>
 
             <li class="app-subnav__section-item">
@@ -798,8 +797,7 @@
           <ul class="app-subnav__section">
 
             <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="security_guidance-pg1.html">What
-                is the security pillar?</a>
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="security_guidance-pg1.html">Security pillar</a>
             </li>
 
             <li class="app-subnav__section-item">
@@ -818,8 +816,7 @@
 
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                href="reliability_guidance-pg1.html">What
-                is the reliability pillar?</a>
+                href="reliability_guidance-pg1.html">Reliability pillar</a>
             </li>
 
             <li class="app-subnav__section-item">
@@ -839,8 +836,7 @@
 
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                href="performance_guidance-pg1.html">What
-                is the performance pillar?</a>
+                href="performance_guidance-pg1.html">Performance efficiency pillar</a>
             </li>
 
             <li class="app-subnav__section-item">
@@ -859,8 +855,7 @@
           <ul class="app-subnav__section">
 
             <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="cost_guidance-pg1.html">What
-                is the cost pillar?</a>
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="cost_guidance-pg1.html">Cost optimisation pillar</a>
             </li>
 
             <li class="app-subnav__section-item">
@@ -902,80 +897,60 @@
             <span class="govuk-caption-xl">Security</span>
             <h1 id="h1_title" class="govuk-heading-xl">Security pillar</h1>
 
-            <h2 id="what_is_the_security_pillar" class="govuk-heading-l">What is the security pillar?</h2>
-            <p class="govuk-body">The security pillar describes how to take advantage of cloud technologies to protect
+            <p class="govuk-body">The security pillar explains how to take advantage of cloud technologies to protect
               data, systems, and
               assets in a way that can improve your security. To give you an oversight of the pillar, we have included
               the seven design principles for security in the cloud below. For more information on the Security Pillar
-              view the further resources.</p>
+              view the further resources:</p>
+
+              <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+                <li><a href="https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf"
+                    target="_blank">AWS Security Whitepapers</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/azure/architecture/framework/security/overview"
+                    target="_blank">Microsoft Azure security pillar overview</a></li>
+              </ul>
 
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+           
+            <h2 id="what_is_the_security_pillar" class="govuk-heading-l">Design principles</h2>
+            
+            <h2 class="govuk-heading-m"></h2>
+            <h3 class="govuk-heading-m">Implement a strong identity foundation</h3>
+            <p class="govuk-body">Identity, authentication and authorisation is highly important for
+              access control and ensures that data remains protected.</p>
 
-            <h3 class="govuk-heading-m">Design principles</h3>
-            <table class="govuk-table">
-              <caption class="govuk-table__caption">Design Principles and Explanations</caption>
-              <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Design Principle</th>
-                  <th scope="col" class="govuk-table__header">Explanation</th>
-                </tr>
-              </thead>
-              <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Implement a strong identity foundation</th>
-                  <td class="govuk-table__cell">Identity, authentication and authorisation is highly important for
-                    access control and ensures that data remains protected</td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Enable traceability</th>
-                  <td class="govuk-table__cell">The ability to audit and attribute actions within the cloud ensures that
-                    service and data security can be monitored</td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Apply security at all layers</th>
-                  <td class="govuk-table__cell">Defence in depth approach increases difficulty of any attacks on the
-                    service</td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Automate security best practices</th>
-                  <td class="govuk-table__cell">Automation allows repeatability and builds confidence in deployment –
-                    assessment of security benchmarks under Governance as Code approach</td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Protect data in transit and at rest</th>
-                  <td class="govuk-table__cell">All data should be encrypted in transit across the cloud and all data
-                    should be encrypted at rest</td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Keep people away from data</th>
-                  <td class="govuk-table__cell">Data should be protected from manual use and manipulation</td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Prepare for security events</th>
-                  <td class="govuk-table__cell">Security breaches and incidents happen and preparation for these events
-                    can ensure that when then do occur they can be dealt with quickly and effectively and minimise any
-                    potential data loss or compromise of assets</td>
-                </tr>
-              </tbody>
-            </table>
+            <h3 class="govuk-heading-m">Enable traceability</h3>
+            <p class="govuk-body">The ability to audit and attribute actions within the cloud ensures that
+              service and data security can be monitored.</p>
+  
+            <h3 class="govuk-heading-m">Apply security at all layers</h3>
+            <p class="govuk-body">Defence in depth approach increases difficulty of any attacks on the
+              service.</p>
 
-            <h3 class="govuk-heading-m">Further security resources</h3>
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li><a href="https://d1.awsstatic.com/whitepapers/architecture/AWS-Security-Pillar.pdf"
-                  target="_blank">AWS Security Whitepapers</a></li>
-              <li><a href="https://docs.microsoft.com/en-us/azure/architecture/framework/security/overview"
-                  target="_blank">Microsoft Azure security pillar overview</a></li>
-            </ul>
+            <h3 class="govuk-heading-m">Automate security best practices</h3>
+            <p class="govuk-body">Automation allows repeatability and builds confidence in deployment –
+              assessment of security benchmarks under Governance as Code approach.</p>
+
+            <h3 class="govuk-heading-m">Protect data in transit and at rest</h3>
+            <p class="govuk-body">All data should be encrypted in transit across the cloud and all data
+              should be encrypted at rest.</p>
+  
+            <h3 class="govuk-heading-m">Keep people away from data</h3>
+            <p class="govuk-body">Data should be protected from manual use and manipulation.</p>
+  
+
+            <h3 class="govuk-heading-m">Prepare for security events</h3>
+            <p class="govuk-body">Security breaches and incidents happen and preparation for these events
+              can ensure that when then do occur they can be dealt with quickly and effectively and minimise any
+              potential data loss or compromise of assets.</p>
 
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-            <a href="#top" class="govuk-link">Back to top</a>
 
           </div>
 
