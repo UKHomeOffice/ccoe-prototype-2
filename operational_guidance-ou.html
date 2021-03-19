@@ -851,8 +851,7 @@
                 <a
                   class="app-subnav__link govuk-link govuk-link--no-visited-state"
                   href="operational_guidance-pg2.html"
-                  >AWS organisations</a
-                >
+                  >AWS organisations</a>
               </li>
 
               <li
@@ -868,15 +867,15 @@
               <li class="app-subnav__section-item">
                 <a
                   class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                  href="operational_guidance-pg1.html"
-                  >Preventative guardrails</a
+                  href="operational_guidance-prev-guardrails.html"
+                  >Preventive guardrails</a
                 >
               </li>
 
               <li class="app-subnav__section-item">
                 <a
                   class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                  href="operational_guidance-pg1.html"
+                  href="operational_guidance-detective.html"
                   >Detective guardrails</a
                 >
               </li>
@@ -1086,13 +1085,46 @@
                 alt="Cproposed OU structure">
   
                 <h3 class="govuk-heading-m">OU explanations</h3>
+              <p class="govuk-body">
+                Core OU - This OU is where the security and logging accounts are located. Within Control Tower Audit and Logging accounts are created as part of the solution. Access to accounts within this OU should be heavily restricted to authorised personnel only.  
+              </p>
 
-              <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                <li>
-                  Core OU - This OU is where the security and logging accounts are located. Within Control Tower Audit and Logging accounts are created as part of the solution. Access to accounts within this OU should be heavily restricted to authorised personnel only.  
-                </li>
-              </ul>
 
+              <p class="govuk-body">
+                Shared services - This OU is where centralised shared services and the accounts that host them should be located. Accounts in this OU should provide centralised services across groups of accounts or the whole Organization. An example could be an account hosting a centralised backup solution.
+              </p>
+              <p class="govuk-body">
+                Networking - This OU is where core networking functions and accounts hosting them will be located. Examples would be Transit Gateway, centralised external network connectivity, Direct Connect and centralised Amazon Virtual Private Cloud (VPC) endpoints.  
+              </p>
+
+              <p class="govuk-body">
+                Sandobox - This OU contains AWS accounts for developers, and they can use this to learn AWS cloud services. Accounts within this Sandbox OU are detached from other internal networks and operate in isolation to minimise blast radius. Accounts within the OU will be accessed through the console, CLI and API. Instances would be accessed through the use of AWS Systems Manager - Session Manager.
+              </p>
+
+              <p class="govuk-body">
+                Workloads Prod - This OU is where centralised shared services and the accounts that host them should be located. Accounts in this OU should provide centralised services across groups of accounts or the whole Organization. An example could be an account hosting a centralised backup solution.
+              </p>
+
+              <p class="govuk-body">
+                Workloads SDLC - This OU includes accounts used in the Software Development Lifecycle (SDLC). This includes pre-production, test and development environments. These accounts have full range of governance controls applied to them, including preventative guardrails. The benefit is that the same constraints apply across the whole SDLC. Without the potential to develop products that need to be further constrained as they go through environments. This will also be a staging environment for new preventative and detective guardrails. This will identify any effect before being applied to the production OU.
+              </p>
+
+              <p class="govuk-body">
+                Workloads Staging Prod - This OU contains accounts that have a limited set of governance controls. Primarily focused on detective guardrails to monitor and report on compliance. A single set of guardrails can apply across all accounts hosting production workloads. This will be for accounts where the compliance position is not known or requires work to meet corporate guidance. 
+              </p>
+
+              <p class="govuk-body">
+                Workloads Staging SDLC - This OU contains all other accounts used in the SDLC where the compliance is not certain. The accounts have a limited set of governance controls. They focus on detective guardrails to monitor and report on compliance. This allows a single set of constraints across the whole SDLC. Without the potential to develop products that need to be further constrained as they go through environments. This OU will be as a staging area for new guardrails before being applied to the equivalent production OU.
+              </p>
+
+              <p class="govuk-body">
+                Suspended OU - This OU will be used for all Sandbox accounts linked to employees who leave the Home Office. These accounts will be suspended when they are no longer required. Accounts placed in the OU should be tagged with where they came from for traceability. An SCP denying all actions should be applied against accounts in this OU.
+              </p>
+
+              <p class="govuk-body">
+                Policy Staging OU - When making policy or structural changes to an AWS Organization it’s important to verify changes before applying them across the OU. The Policy Staging OU provides a way for administrators to test proposed changes to guardrails. They can then apply policies to verify the result in a safe and consistent manner. Once changes are understood and verified, a roll out strategy can be employed to slowly apply changes to the broader Organization.
+              </p>
+        
               <!-- Hidden back to nav link </a> -->
               <a href="#side-nav" class="govuk-skip-link"
                 >Back to side navigation</a
@@ -1107,7 +1139,7 @@
               </h2>
               <h3 class="govuk-heading-m">Staging OUs</h3>
               <p class="govuk-body">
-                Staging OUs are for non-compliant accounts within the AWS Organization at the Home Office. The main difference between the standard OUs and staging OUs is the staging OUs do not include strict preventative or re-active guardrails. Both sets of OUs include the same set of detective guardrails.</p>
+                Staging OUs are for non-compliant accounts within the AWS Organization at the Home Office. The main difference between the standard OUs and staging OUs is the staging OUs do not include strict preventive or re-active guardrails. Both sets of OUs include the same set of detective guardrails.</p>
                 
                 <p class="govuk-body">
                   We plan to split the structure to include standard and staging OU’s to reduce the influence of future controls. Standard OU’s are for new accounts that are expected to align to documented guardrails. Also, it will apply to existing accounts where changes need to be made to meet Home Office standards. We plan to implement staging OUs for existing accounts that are not compliant with Home Office guidance. Accounts will move to the standard OU's when they are compliant with Home Office standards. This starts with development, test and pre-production accounts to verify the results before production accounts are moved into the standard OU.  
