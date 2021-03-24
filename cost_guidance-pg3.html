@@ -1,125 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template no-js">
-  <head>
-    <meta charset="utf-8" />
-    <title>Cost optimisation - Cloud Centre of Excellence</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
-    <meta name="theme-color" content="#0b0c0c" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <meta charset="utf-8">
+  <title>Cost optimisation - Cloud Centre of Excellence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c">
 
-    <link
-      rel="shortcut icon"
-      sizes="16x16 32x32 48x48"
-      href="/assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="mask-icon"
-      href="/assets/images/govuk-mask-icon.svg"
-      color="#0b0c0c"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/images/govuk-apple-touch-icon-180x180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="/assets/images/govuk-apple-touch-icon-167x167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/assets/images/govuk-apple-touch-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="/assets/images/govuk-apple-touch-icon.png"
-    />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="og:title" content="Layout" />
-    <meta
-      name="description"
-      content="Organise the layout of the page into blocks"
-    />
-    <meta
-      name="og:description"
-      content="Organise the layout of the page into blocks"
-    />
-    <link
-      rel="canonical"
-      href="https://design-system.service.gov.uk/styles/layout/"
-    />
-    <!--[if lt IE 9]>
-      <link
-        href="/stylesheets/main-ie8-070b6278fbfcc7f254a5f4f3b92e38c3.css"
-        rel="stylesheet"
-        media="all"
-      />
-      <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
-    <![endif]-->
-    <!--[if !IE 8]><!-->
-    <link href="./stylesheets/styles.css" rel="stylesheet" media="all" />
-    <!--<![endif]-->
-    <script src="./javascript/script.js"></script>
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
 
-    <meta
-      property="og:image"
-      content="https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png"
-    />
-  </head>
+  <meta name="og:title" content="Layout">
+  <meta name="description" content="Organise the layout of the page into blocks">
+  <meta name="og:description" content="Organise the layout of the page into blocks">
+  <link rel="canonical" href="https://design-system.service.gov.uk/styles/layout/" />
+  <!--[if lt IE 9]>
+    <link href="/stylesheets/main-ie8-070b6278fbfcc7f254a5f4f3b92e38c3.css" rel="stylesheet" media="all" />
+    <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
+  <![endif]-->
+  <!--[if !IE 8]><!-->
+  <link href="./stylesheets/styles.css" rel="stylesheet" media="all" />
+  <!--<![endif]-->
+  <script src="./javascript/script.js"></script>
 
-  <body class="govuk-template__body">
-    <script>
-      document.body.className = document.body.className
-        ? document.body.className + " js-enabled"
-        : "js-enabled";
-    </script>
+  <meta property="og:image" content="https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png">
+</head>
 
-    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<body class="govuk-template__body ">
+  <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
-    <div class="app-pane app-pane--enabled" id="top">
-      <header
-        class="govuk-header app-header"
-        role="banner"
-        data-module="govuk-header"
-      >
-        <div
-          class="govuk-header__container app-width-container app-header__container"
-        >
-          <div class="govuk-header__logo app-header__logo">
-            <a href="/" class="govuk-header__link govuk-header__link--homepage">
-              <span class="govuk-header__product-name">
-                Cloud Centre of Excellence
-              </span>
-            </a>
-          </div>
-          <div
-            class="app-site-search"
-            data-module="app-search"
-            data-search-index="/search-index-e675b1e463f677c88b84bbabe62f6038.json"
-          >
-            <label class="govuk-visually-hidden" for="app-site-search__input"
-              >Search Design system</label
-            >
-            <a class="app-site-search__link govuk-link" href="/sitemap"
-              >Sitemap</a
-            >
-          </div>
-          <div class="app-header-mobile-nav-toggler-wrapper">
-            <button
-              id="app-mobile-nav-toggler"
-              class="govuk-button app-header-mobile-nav-toggler js-app-mobile-nav-toggler"
-              aria-controls="app-mobile-nav"
-            >
-              Menu
-            </button>
-          </div>
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+  <div class="app-pane app-pane--enabled" id="top">
+    <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+      <div class="govuk-header__container app-width-container app-header__container">
+        <div class="govuk-header__logo app-header__logo">
+          <a href="/" class="govuk-header__link govuk-header__link--homepage">
+            <span class="govuk-header__product-name">
+              Cloud Centre of Excellence
+            </span>
+          </a>
+        </div>
+        <div class="app-site-search" data-module="app-search"
+          data-search-index="/search-index-e675b1e463f677c88b84bbabe62f6038.json">
+          <label class="govuk-visually-hidden" for="app-site-search__input">Search Design system</label>
+          <a class="app-site-search__link govuk-link" href="sitemap.html">Sitemap</a>
+        </div>
+        <div class="app-header-mobile-nav-toggler-wrapper">
+          <button id="app-mobile-nav-toggler"
+            class="govuk-button app-header-mobile-nav-toggler js-app-mobile-nav-toggler" aria-controls="app-mobile-nav">
+            Menu
+          </button>
         </div>
       </header>
 
@@ -1200,10 +1137,12 @@
                     Accessibility
                   </a>
                 </li>
-
-                <li class="govuk-footer__inline-list-item">
-                  <a class="govuk-footer__link" href="/sitemap"> Sitemap </a>
-                </li>
+                
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="sitemap.html">
+                  Sitemap
+                </a>
+              </li>
 
                 <li class="govuk-footer__inline-list-item">
                   <a class="govuk-footer__link" href="/privacy-policy">
