@@ -917,47 +917,56 @@
             <img src="images/ou_structure.png" style="border: solid" alt="Cproposed OU structure">
 
             <h3 class="govuk-heading-m">OU explanations</h3>
-            <p class="govuk-body">Core OU - This OU is where the security and logging accounts are located. Within
+            <h4 class="govuk-heading-s">Core OU</h4>
+            <p class="govuk-body">This OU is where the security and logging accounts are located. Within
               Control Tower Audit and Logging accounts are created as part of the solution. Access to accounts within
               this OU should be heavily restricted to authorised personnel only.</p>
-
-            <p class="govuk-body">Shared services - This OU is where centralised shared services and the accounts that
+            <h4 class="govuk-heading-s">Shared services</h4>
+            <p class="govuk-body">This OU is where centralised shared services and the accounts that
               host them should be located. Accounts in this OU should provide centralised services across groups of
               accounts or the whole Organization. An example could be an account hosting a centralised backup solution.
             </p>
-            <p class="govuk-body">Networking - This OU is where core networking functions and accounts hosting them will
+            <h4 class="govuk-heading-s">Networking</h4>
+            <p class="govuk-body">This OU is where core networking functions and accounts hosting them will
               be located. Examples would be Transit Gateway, centralised external network connectivity, Direct Connect
               and centralised Amazon Virtual Private Cloud (VPC) endpoints.</p>
-            <p class="govuk-body">Sandobox - This OU contains AWS accounts for developers, and they can use this to
+            <h4 class="govuk-heading-s">Sandobox</h4>
+            <p class="govuk-body">This OU contains AWS accounts for developers, and they can use this to
               learn AWS cloud services. Accounts within this Sandbox OU are detached from other internal networks and
               operate in isolation to minimise blast radius. Accounts within the OU will be accessed through the
               console, CLI and API. Instances would be accessed through the use of AWS Systems Manager - Session
               Manager.</p>
-            <p class="govuk-body">Workloads Prod - This OU is where centralised shared services and the accounts that
+            <h4 class="govuk-heading-s">Workloads Prod</h4>
+            <p class="govuk-body">This OU is where centralised shared services and the accounts that
               host them should be located. Accounts in this OU should provide centralised services across groups of
               accounts or the whole Organization. An example could be an account hosting a centralised backup solution.
             </p>
-            <p class="govuk-body">Workloads SDLC - This OU includes accounts used in the Software Development Lifecycle
+            <h4 class="govuk-heading-s">Workloads SDLC</h4>
+            <p class="govuk-body">This OU includes accounts used in the Software Development Lifecycle
               (SDLC). This includes pre-production, test and development environments. These accounts have full range of
               governance controls applied to them, including preventative guardrails. The benefit is that the same
               constraints apply across the whole SDLC. Without the potential to develop products that need to be further
               constrained as they go through environments. This will also be a staging environment for new preventative
               and detective guardrails. This will identify any effect before being applied to the production OU.</p>
-            <p class="govuk-body">Workloads Staging Prod - This OU contains accounts that have a limited set of
+            <h4 class="govuk-heading-s">Workloads Staging Prod</h4>
+            <p class="govuk-body">This OU contains accounts that have a limited set of
               governance controls. Primarily focused on detective guardrails to monitor and report on compliance. A
               single set of guardrails can apply across all accounts hosting production workloads. This will be for
               accounts where the compliance position is not known or requires work to meet corporate guidance.</p>
-            <p class="govuk-body">Workloads Staging SDLC - This OU contains all other accounts used in the SDLC where
+            <h4 class="govuk-heading-s">Workloads Staging SDLC</h4>
+            <p class="govuk-body">This OU contains all other accounts used in the SDLC where
               the compliance is not certain. The accounts have a limited set of governance controls. They focus on
               detective guardrails to monitor and report on compliance. This allows a single set of constraints across
               the whole SDLC. Without the potential to develop products that need to be further constrained as they go
               through environments. This OU will be as a staging area for new guardrails before being applied to the
               equivalent production OU.</p>
-            <p class="govuk-body">Suspended OU - This OU will be used for all Sandbox accounts linked to employees who
+            <h4 class="govuk-heading-s">Suspended OU</h4>
+            <p class="govuk-body">This OU will be used for all Sandbox accounts linked to employees who
               leave the Home Office. These accounts will be suspended when they are no longer required. Accounts placed
               in the OU should be tagged with where they came from for traceability. An SCP denying all actions should
               be applied against accounts in this OU.</p>
-            <p class="govuk-body">Policy Staging OU - When making policy or structural changes to an AWS Organization
+            <h4 class="govuk-heading-s">Policy Staging OU</h4>
+            <p class="govuk-body">When making policy or structural changes to an AWS Organization
               it’s important to verify changes before applying them across the OU. The Policy Staging OU provides a way
               for administrators to test proposed changes to guardrails. They can then apply policies to verify the
               result in a safe and consistent manner. Once changes are understood and verified, a roll out strategy can
