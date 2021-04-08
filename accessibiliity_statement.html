@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>Public cloud services - Cloud Centre of Excellence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
+
+  <meta name="og:title" content="Layout">
+  <meta name="description" content="Organise the layout of the page into blocks">
+  <meta name="og:description" content="Organise the layout of the page into blocks">
+  <link rel="canonical" href="https://design-system.service.gov.uk/styles/layout/" />
+  <!--[if lt IE 9]>
+    <link href="/stylesheets/main-ie8-070b6278fbfcc7f254a5f4f3b92e38c3.css" rel="stylesheet" media="all" />
+    <script src="/javascripts/head-ie8-a371085ca251931cc9b5360c7da328f6.js"></script>
+  <![endif]-->
+  <!--[if !IE 8]><!-->
+  <link href="./stylesheets/styles.css" rel="stylesheet" media="all" />
+  <!--<![endif]-->
+  <script src="./javascript/script.js"></script>
+
+  <meta property="og:image" content="https://design-system.service.gov.uk/assets/images/govuk-opengraph-image.png">
+</head>
+
+<body class="govuk-template__body ">
+  <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+  <div class="app-pane app-pane--enabled" id="top">
+    <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+      <div class="govuk-header__container app-width-container app-header__container">
+        <div class="govuk-header__logo app-header__logo">
+          <a href="/" class="govuk-header__link govuk-header__link--homepage">
+            <span class="govuk-header__product-name">
+              Cloud Centre of Excellence
+            </span>
+          </a>
+        </div>
+        <div class="app-site-search" data-module="app-search"
+          data-search-index="/search-index-e675b1e463f677c88b84bbabe62f6038.json">
+          <label class="govuk-visually-hidden" for="app-site-search__input">Search Design system</label>
+          <a class="app-site-search__link govuk-link" href="sitemap.html">Sitemap</a>
+        </div>
+        <div class="app-header-mobile-nav-toggler-wrapper">
+          <button id="app-mobile-nav-toggler"
+            class="govuk-button app-header-mobile-nav-toggler js-app-mobile-nav-toggler" aria-controls="app-mobile-nav">
+            Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- <nav id="app-mobile-nav" class="app-mobile-nav js-app-mobile-nav" role="navigation">
+      <ul class="app-mobile-nav__list">
+
+        <li>
+          <div class="app-mobile-nav-subnav-toggler">
+            <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler"
+              href="/get-started/">
+              Get started
+            </a>
+          </div>
+
+          <ul class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav " aria-label="Get started">
+            <li class="app-mobile-nav__subnav-item">
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/get-started/">
+                Get started overview
+              </a>
+            </li>
+
+            <li>
+
+              <h4 class="app-mobile-nav__theme">Setup guides</h4>
+
+              <ul class="app-mobile-nav__list">
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/get-started/prototyping/">
+                    Prototyping
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/get-started/production/">
+                    Production
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li>
+
+              <h4 class="app-mobile-nav__theme">How to guides</h4>
+
+              <ul class="app-mobile-nav__list">
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/get-started/updating-your-code/">
+                    Replace variables, functions and mixins from our old frameworks
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/get-started/labels-legends-headings/">
+                    Making labels and legends headings
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/get-started/extending-and-modifying-components/">
+                    Extending and modifying components in production
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/get-started/focus-states/">
+                    Understanding focus state styles
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li>
+          <div class="app-mobile-nav-subnav-toggler app-mobile-nav__subnav-toggler--active">
+            <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler"
+              href="/styles/">
+              Styles
+            </a>
+          </div>
+
+          <ul
+            class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav app-mobile-nav__subnav--active"
+            aria-label="Styles">
+            <li class="app-mobile-nav__subnav-item">
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/styles/">
+                Styles overview
+              </a>
+            </li>
+
+            <li>
+
+              <ul class="app-mobile-nav__list">
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/styles/colour/">
+                    Colour
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/styles/images/">
+                    Images
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item app-mobile-nav__subnav-item--current">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/styles/layout/">
+                    Layout
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/styles/page-template/">
+                    Page template
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/styles/spacing/">
+                    Spacing
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/styles/typography/">
+                    Typography
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li>
+          <div class="app-mobile-nav-subnav-toggler">
+            <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler"
+              href="/components/">
+              Components
+            </a>
+          </div>
+
+          <ul class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav " aria-label="Components">
+            <li class="app-mobile-nav__subnav-item">
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/">
+                Components overview
+              </a>
+            </li>
+
+            <li>
+
+              <ul class="app-mobile-nav__list">
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/accordion/">
+                    Accordion
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/back-link/">
+                    Back link
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/breadcrumbs/">
+                    Breadcrumbs
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/button/">
+                    Button
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/character-count/">
+                    Character count
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/checkboxes/">
+                    Checkboxes
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/date-input/">
+                    Date input
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/details/">
+                    Details
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/error-message/">
+                    Error message
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/error-summary/">
+                    Error summary
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/fieldset/">
+                    Fieldset
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/file-upload/">
+                    File upload
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/footer/">
+                    Footer
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/header/">
+                    Header
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/inset-text/">
+                    Inset text
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/notification-banner/">
+                    Notification banner
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/panel/">
+                    Panel
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/phase-banner/">
+                    Phase banner
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/radios/">
+                    Radios
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/select/">
+                    Select
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/skip-link/">
+                    Skip link
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/summary-list/">
+                    Summary list
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/table/">
+                    Table
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/tabs/">
+                    Tabs
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/tag/">
+                    Tag
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/text-input/">
+                    Text input
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/components/textarea/">
+                    Textarea
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/components/warning-text/">
+                    Warning text
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li>
+          <div class="app-mobile-nav-subnav-toggler">
+            <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler"
+              href="/patterns/">
+              Patterns
+            </a>
+          </div>
+
+          <ul class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav " aria-label="Patterns">
+            <li class="app-mobile-nav__subnav-item">
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/patterns/">
+                Patterns overview
+              </a>
+            </li>
+
+            <li>
+
+              <h4 class="app-mobile-nav__theme">Ask users for…</h4>
+
+              <ul class="app-mobile-nav__list">
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/patterns/addresses/">
+                    Addresses
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/bank-details/">
+                    Bank details
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/patterns/dates/">
+                    Dates
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/email-addresses/">
+                    Email addresses
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/ethnic-group/">
+                    Ethnic groups
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/gender-or-sex/">
+                    Gender or sex
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/patterns/names/">
+                    Names
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/national-insurance-numbers/">
+                    National Insurance numbers
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/patterns/passwords/">
+                    Passwords
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/payment-card-details/">
+                    Payment card details
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/telephone-numbers/">
+                    Telephone numbers
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li>
+
+              <h4 class="app-mobile-nav__theme">Help users to…</h4>
+
+              <ul class="app-mobile-nav__list">
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/check-a-service-is-suitable/">
+                    Check a service is suitable
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/check-answers/">
+                    Check answers
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/confirm-an-email-address/">
+                    Confirm an email address
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/contact-a-department-or-service-team/">
+                    Contact a department or service team
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/create-a-username/">
+                    Create a username
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/create-accounts/">
+                    Create accounts
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/patterns/validation/">
+                    Recover from validation errors
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li>
+
+              <h4 class="app-mobile-nav__theme">Pages</h4>
+
+              <ul class="app-mobile-nav__list">
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/confirmation-pages/">
+                    Confirmation pages
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/page-not-found-pages/">
+                    Page not found pages
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/problem-with-the-service-pages/">
+                    There is a problem with the service pages
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/question-pages/">
+                    Question pages
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/service-unavailable-pages/">
+                    Service unavailable pages
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/patterns/start-pages/">
+                    Start pages
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/step-by-step-navigation/">
+                    Step by step navigation
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/patterns/task-list-pages/">
+                    Task list pages
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li>
+          <div class="app-mobile-nav-subnav-toggler">
+            <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler"
+              href="/community/">
+              Community
+            </a>
+          </div>
+
+          <ul class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav " aria-label="Community">
+            <li class="app-mobile-nav__subnav-item">
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/community/">
+                Community overview
+              </a>
+            </li>
+
+            <li>
+
+              <ul class="app-mobile-nav__list">
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/community/resources-and-tools/">
+                    Resources and tools
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="/community/backlog/">
+                    Backlog
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/community/propose-a-content-change-using-github/">
+                    Propose a content change using GitHub
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/community/propose-a-component-or-pattern/">
+                    Propose a component or pattern
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/community/develop-a-component-or-pattern/">
+                    Develop a component or pattern
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/community/contribution-criteria/">
+                    Contribution criteria
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="/community/design-system-working-group/">
+                    Design System working group
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </li>
+
+      </ul>
+    </nav> -->
+
+    <div class="app-phase-banner__wrapper">
+
+      <div class="govuk-phase-banner app-phase-banner app-width-container">
+        <p class="govuk-phase-banner__content">
+          <strong class="govuk-tag govuk-phase-banner__content__tag">
+            alpha
+          </strong>
+          <span class="govuk-phase-banner__text">
+            This is a new service – your <a class="govuk-link" href="feedback_page.html">feedback</a> will help us to
+            improve it.
+          </span>
+        </p>
+      </div>
+
+    </div>
+
+    <nav class="app-navigation govuk-clearfix">
+      <ul class="app-navigation__list app-width-container">
+
+        <li class="app-navigation__list-item">
+          <a class="govuk-link govuk-link--no-visited-state app-navigation__link" href="index.html"
+            data-topnav="Get started">HO - CCoE</a>
+        </li>
+
+        <li class="app-navigation__list-item">
+          <a class="govuk-link govuk-link--no-visited-state app-navigation__link" href="cloud_training.html"
+            data-topnav="Styles">Cloud training</a>
+        </li>
+
+        <li class="app-navigation__list-item">
+          <a class="govuk-link govuk-link--no-visited-state app-navigation__link" href="cloud_guidance.html"
+            data-topnav="Components">Cloud guidance</a>
+        </li>
+
+        <li class="app-navigation__list-item">
+          <a class="govuk-link govuk-link--no-visited-state app-navigation__link" href="public_cloud_services.html"
+            data-topnav="Patterns">Public cloud services</a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="app-pane__body app-width-container">
+
+      <!-- Start of main body -->
+      <div class="app-pane__content">
+        <main style="padding-left: 15px;" id="main-content" class="app-content" role="main">
+
+          <div class="govuk-grid-row">
+
+            <div class="govuk-breadcrumbs ">
+              <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+                </li>
+                <li class="govuk-breadcrumbs__list-item">
+                  <a class="govuk-breadcrumbs__link" href="sitemap.html">Sitemap</a>
+                </li>
+            </div>
+
+            <!-- Start of statement -->
+            <h1 class="govuk-heading-xl">Accessibility</h1>
+            <p class="govuk-body">This is our draft accessibility statement for Beta. We will update this page as we do more accessibility testing.</p>
+            <p class="govuk-body">The Home Office - Cloud Centre of Excellence (HO-CCoE) is maintained by the Public Cloud Team (PCT) in Enterprise services. This page explains how the team works to ensure the HO-CCoE is accessible.</p>
+   
+            <h2 class="govuk-heading-l">Accessibility statement for the HO-CCoE website</h2>
+            <p class="govuk-body">This accessibility statement applies to the HO-CCoE at <a href="http://www.ccoe-prototype-2.com.s3-website.eu-west-2.amazonaws.com/">http://www.ccoe-prototype-2.com.s3-website.eu-west-2.amazonaws.com/</a>. Please note this is a temporary link.</p>
+            <p class="govuk-body">The PCT wants as many people as possible to be able to use this website. For example, that means you should be able to:</p>
+
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li>change colours, contrast levels and fonts</li>
+            <li>zoom in up to 300% without the text spilling off the screen</li>
+            <li>navigate most of the website using just a keyboard</li>
+            <li>navigate most of the website using speech recognition software</li>
+            <li>listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)</li>
+            </ul>
+
+            <p class="govuk-body">The team has also made the website text as simple as possible to understand.</p>
+            <p class="govuk-body"><a href="https://mcmw.abilitynet.org.uk/">AbilityNet</a> has advice on making your device easier to use if you have a disability.</p>
+            <h3 class="govuk-heading-m">Feedback and contact information</h3>
+
+            <p class="govuk-body">The PCT is always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think this website is not meeting accessibility requirements, email the PCT at <a href="mailto:public.cloud@homeoffice.gov.uk">public.cloud@homeoffice.gov.uk</a></p>
+            <p class="govuk-body">The PCT will review your request and get back to you in 5 working days.</p>
+
+            <h3 class="govuk-heading-m">Enforcement procedure</h3>
+            <p class="govuk-body">The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint, <a href="https://www.equalityadvisoryservice.com/">contact the Equality Advisory and Support Service (EASS)</a>.</p>
+            <p class="govuk-body">PCT is committed to making its websites accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.</p>
+            
+            <h3 class="govuk-heading-m">Compliance status</h3>
+            <p class="govuk-body">The HO-CCoE at <a href="http://www.ccoe-prototype-2.com.s3-website.eu-west-2.amazonaws.com/">http://www.ccoe-prototype-2.com.s3-website.eu-west-2.amazonaws.com/</a> is partially compliant with the Web Content Accessibility Guidelines (WCAG) version 2.1 AA standard, due to the non-compliances listed below.</p>
+            <h3 class="govuk-heading-m">Non-accessible content</h3>
+            <p class="govuk-body">The content listed below is non-accessible for the following reasons.</p>
+
+            <h4 class="govuk-heading-s">Non-compliance with the accessibility regulations</h4>
+            <p class="govuk-body">The HO-CCoE at <a href="http://www.ccoe-prototype-2.com.s3-website.eu-west-2.amazonaws.com/">http://www.ccoe-prototype-2.com.s3-website.eu-west-2.amazonaws.com/</a> is partially compliant. Some of the noted accessibility issues that need to be addressed are:</p>
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+              <li>users cannot navigate most of the website using speech recognition software</li>
+              <li>users cannot listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)</li>
+              </ul>
+            <p class="govuk-body">We are woking to fix these accessibility issues.</p>
+
+            <h3 class="govuk-heading-m">How this website has been tested for accessibility</h3>
+            <p class="govuk-body">The PCT are planning to test the accessibility of the HO-CCoE. We plan to test the service with users with access needs before we move in to Live. We have taken accessibility into consideration from the start and used manual testing and automated testing such as Wave.</p>
+
+            <h3 class="govuk-heading-m">How the PCT makes this website accessible</h3>
+            <p class="govuk-body">The PCT works hard to ensure that HO-CCoE is accessible.</p>
+            <p class="govuk-body">Where possible, the team aims to research components and patterns with a representative range of users, including those with disabilities.</p>
+            <p class="govuk-body">We also test components to ensure they work with a broad range of browsers, devices and assistive technologies - including screen magnifiers, screen readers and speech recognition tools.</p>
+            <p class="govuk-body">When we publish new content, we’ll continue to make sure that it meets accessibility standards.</p>
+
+            <h3 class="govuk-heading-m">Preparation of this accessibility statement</h3>
+            <p class="govuk-body">This draft statement was prepared on 09 April 2021.</p>
+            <p class="govuk-body">If you have any questions or need help, contact the PCT by email at <a href="mailto:public.cloud@homeoffice.gov.uk">public.cloud@homeoffice.gov.uk</p>
+            <a href="#top" class="govuk-link">Back to top</a>
+ <!---->
+          </div>
+
+        </main>
+
+      </div>
+
+      <!-- <div class="app-back-to-top app-back-to-top--hidden" data-module="app-back-to-top">
+        <a class="govuk-link govuk-link--no-visited-state app-back-to-top__link" href="#top">
+          <svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg"
+            width="13" height="17" viewBox="0 0 13 17">
+            <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+          </svg>Back to top
+        </a>
+      </div> -->
+
+    </div>
+
+    <footer class="govuk-footer " role="contentinfo">
+      <div class="govuk-width-container ">
+        <div class="govuk-footer__navigation">
+
+          <div class="govuk-footer__section">
+            Built by the Public Cloud Team, Home Office, DDaT
+          </div>
+
+          <div class="govuk-footer__section">
+            <ul class="govuk-footer__inline-list">
+              <ul class="govuk-footer__list govuk-footer__list--columns-2">
+                <li class="govuk-footer__list-item">
+                  <a class="govuk-footer__link" href="#">
+                    Accessibility statement
+                  </a>
+                </li>
+                <li class="govuk-footer__list-item">
+                  <a class="govuk-footer__link" href="sitemap.html">
+                    Sitemap
+                  </a>
+                </li>
+                <li class="govuk-footer__list-item">
+                  <a class="govuk-footer__link" href="feedback_page.html">
+                    Feedback
+                  </a>
+                </li>
+                <li class="govuk-footer__list-item">
+                  <a class="govuk-footer__link" href="mailto:public.cloud@homeoffice.gov.uk">
+                    public.cloud@homeoffice.gov.uk
+                  </a>
+                </li>
+              </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./javascript/govuk-frontend.js"></script>
+  <!--[if !IE 8]><!-->
+  <script src="./javascript/application.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+    <script src="/javascripts/application-ie8-5a2cfeaee9daeca7d49c5835fd89f009.js"></script>
+  <![endif]-->
+
+</body>
+
+</html>
