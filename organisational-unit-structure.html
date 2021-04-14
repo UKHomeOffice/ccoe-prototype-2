@@ -877,15 +877,15 @@
               </ol>
             </div>
 
-            <span class="govuk-caption-xl">Operational Excellence</span>
-            <h1 class="govuk-heading-xl">Organisational Unit structure</h1>
+            <span class="govuk-caption-xl">Operational excellence</span>
+            <h1 class="govuk-heading-xl">Organisational unit structure</h1>
             <p class="govuk-body">This section is for Amazon Web Services (AWS) cloud users in the Home Office. This
-              will be more important for Architects and stakeholders as Organisational Unit (OU) structure can affect
+              will be more important for Architects and stakeholders as organisational unit (OU) structure can affect
               the security of accounts.</p>
             <p class="govuk-body">This content explains:</p>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>AWS Organizations</li>
-              <li>the proposed OU Structure within AWS Organizations for the Home Office</li>
+              <li>AWS organisations</li>
+              <li>the proposed OU Structure within AWS organisations for the Home Office</li>
               <li>OU structure</li>
               <li>AWS Control Tower</li>
             </ul>
@@ -896,17 +896,17 @@
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
             <h2 class="govuk-heading-l">Proposed OU Structure</h2>
-            <p class="govuk-body">The Public Cloud Team are planning to enable a range of AWS Organizations features.
+            <p class="govuk-body">The Public Cloud Team are planning to enable a range of AWS organisations features.
               This is to address concerns within the Home Office, especially around security and compliance. Important
               considerations include:</p>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>Needs to be a flexible and scalable Organizational Unit (OU) structure to support a range of users and
+              <li>Needs to be a flexible and scalable organisational unit (OU) structure to support a range of users and
                 use cases</li>
               <li>The potential use of AWS Control Tower with different areas of the Home Office in the future</li>
               <li>Security guardrails</li>
-              <li>Service Control Policies (SCP) are an organization policy that is used to manage permissions within an
-                Organization. SCPs are used to manage permissions within an organization and can be applied against
-                individual accounts, OUs, or across the whole of the organization</li>
+              <li>Service Control Policies (SCP) are an organisation policy that is used to manage permissions within an
+                organisation. SCPs are used to manage permissions within an organisation and can be applied against
+                individual accounts, OUs, or across the whole of the organisation</li>
             </ul>
 
             <h2 class="govuk-heading-l">Proposed OU Structure</h2>
@@ -920,7 +920,7 @@
             <h4 class="govuk-heading-s">Shared services</h4>
             <p class="govuk-body">This OU is where centralised shared services and the accounts that
               host them should be located. Accounts in this OU should provide centralised services across groups of
-              accounts or the whole Organization. An example could be an account hosting a centralised backup solution.
+              accounts or the whole organisation. An example could be an account hosting a centralised backup solution.
             </p>
             <h4 class="govuk-heading-s">Networking</h4>
             <p class="govuk-body">This OU is where core networking functions and accounts hosting them will
@@ -935,7 +935,7 @@
             <h4 class="govuk-heading-s">Workloads Prod</h4>
             <p class="govuk-body">This OU is where centralised shared services and the accounts that
               host them should be located. Accounts in this OU should provide centralised services across groups of
-              accounts or the whole Organization. An example could be an account hosting a centralised backup solution.
+              accounts or the whole organisation. An example could be an account hosting a centralised backup solution.
             </p>
             <h4 class="govuk-heading-s">Workloads SDLC</h4>
             <p class="govuk-body">This OU includes accounts used in the Software Development Lifecycle
@@ -962,11 +962,11 @@
               in the OU should be tagged with where they came from for traceability. An SCP denying all actions should
               be applied against accounts in this OU.</p>
             <h4 class="govuk-heading-s">Policy Staging OU</h4>
-            <p class="govuk-body">When making policy or structural changes to an AWS Organization
+            <p class="govuk-body">When making policy or structural changes to an AWS organisation
               it’s important to verify changes before applying them across the OU. The Policy Staging OU provides a way
               for administrators to test proposed changes to guardrails. They can then apply policies to verify the
               result in a safe and consistent manner. Once changes are understood and verified, a roll out strategy can
-              be employed to slowly apply changes to the broader Organization.</p>
+              be employed to slowly apply changes to the broader organisation.</p>
 
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
@@ -975,7 +975,7 @@
 
             <h2 class="govuk-heading-l">OU functions</h2>
             <h3 class="govuk-heading-m">Staging OUs</h3>
-            <p class="govuk-body">Staging OUs are for non-compliant accounts within the AWS Organization at the Home
+            <p class="govuk-body">Staging OUs are for non-compliant accounts within the AWS organisation at the Home
               Office. The main difference between the standard OUs and staging OUs is the staging OUs do not include
               strict preventive or re-active guardrails. Both sets of OUs include the same set of detective guardrails.
             </p>
@@ -999,7 +999,7 @@
                 href="https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html">Control
                 Tower</a> in the future within different areas of the Home Office. Therefore, our proposed OU structure
               has taken control tower into consideration. This is to simplify the transfer of accounts and mapping from
-              the existing AWS Organizations OU structure to Control Tower. It also means guardrails can be quickly
+              the existing AWS organisations OU structure to Control Tower. It also means guardrails can be quickly
               mapped and implemented as accounts are transferred between the solutions.</p>
             <p class="govuk-body">As the Home Office looks to move services to AWS Control Tower there are certain
               limitations that should be noted. This may affect how the OU structure is implemented. Only top level OUs
