@@ -862,12 +862,81 @@
 
             <span class="govuk-caption-xl">Operational excellence</span>
             <h1 class="govuk-heading-xl">Tagging standards</h1>
+<!--           
+            <table class="govuk-table">
+              <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Tag key</th>
+                  <th scope="col" class="govuk-table__header">Tag formatting</th>
+                  <th scope="col" class="govuk-table__header">Tag formatting</th>
+                  <th scope="col" class="govuk-table__header">Tag formatting</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">First 6 weeks</th>
+                  <td class="govuk-table__cell">£109.80 per week</td>
+                  <td class="govuk-table__cell">£109.80 per week</td>
+                  <td class="govuk-table__cell">£109.80 per week</td>
 
-            <h2 id="opex_sublink_three" class="govuk-heading-l">Coming soon</h2>
-            <p class="govuk-body">We do not yet have this page ready, apologises for any inconvenience caused. You can
-              still view all the tagging standards information on our <a
-                href="https://collaboration.homeoffice.gov.uk/display/CLOUD/Cloud+Tagging+Standards">confluence
-                page</a>.</p>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Next 33 weeks</th>
+                  <td class="govuk-table__cell">£109.80 per week</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Total estimated pay</th>
+                  <td class="govuk-table__cell">£4,282.20</td>
+                </tr>
+              </tbody>
+            </table> -->
+
+            <h2 id="opex_sublink_three" class="govuk-heading-l">What is a tag?</h2>
+            <p class="govuk-body">A tag is a label that you assign to an AWS resource. Each tag consists of a key and value, both of which you define for each resource, and each tag key can have only one value. You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level. Tags enable you to categorise your AWS resources in different ways. For example, by purpose, owner, environment or other criteria.</p>
+            <p class="govuk-body">Tag keys are case sensitive. Some examples are CostCenter, Environment, or Project. Tag values are also case sensitive. Some examples are 111122223333 or Production.</p>
+            <p class="govuk-body">You can add, change, or remove tags one resource at a time from each resource’s service console, service API, or the AWS CLI. Tags identify who owns the resource and the environment where it is used. They also provide additional information and context about that specific resource.</p>
+
+            <h3 class="govuk-heading-m">AWS best practices</h3>
+            <p class="govuk-body">You can add, change, or remove tags one resource at a time from each resource’s service console, service API, or the AWS CLI. Tags identify who owns the resource and the environment where it is used. They also provide additional information and context about that specific resource.</p>
+            
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+              <li>
+                do not store personally identifiable information (PII) or other confidential or sensitive information in tags
+              </li>
+              <li>
+                use a standardised, case-sensitive format for tags, and apply it consistently across all resource types
+              </li>
+              <li>
+                consider tag guidelines that support multiple purposes, like managing resource access control, cost tracking, automation, and organization
+              </li>
+              <li>
+                use too many tags rather than too few tags
+              </li>
+            </ul>
+
+            <h2 id="opex_sublink_three" class="govuk-heading-l">Why do we want a tagging standard?</h2>
+            <p class="govuk-body">The Public Cloud Team (PCT) want to be able to track each resource back to the owner/department or project. Having a set of mandatory tags on every resource (case sensitive) makes it uniform, professional and searchable. It will also help when we need to search through logs to identify a resource.</p>
+          
+            <h3 class="govuk-heading-m">Current problems:</h3>
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <li>
+              there is no governance on what tags are used because each department has control. This makes it difficult to trace
+            </li>
+            <li>
+              it is difficult for billing to accurately charge back to each department for their usage
+            </li>
+            <li>
+              it is difficult to provide support. For example, if we identify an underutilised EC2 instance without clear tags, it makes it difficult to find the department responsible
+            </li>
+            <li>
+              the Home Office have over 1500 tag keys, which is untenable. Lots of tags are different variations of the same thing e.g. 25 tags of 'Cost Centre'.  
+            </li>
+          </ul>
+        
+          <h2 id="opex_sublink_three" class="govuk-heading-l">Home Office Mandatory tags</h2>
+          <p class="govuk-body">We have contacted product owners of Amazon Web Services (AWS) and Microsoft Azure to find out what tags they have used on their current resources. We have compiled a list of mandatory tags to implement across the whole estate. It's important to note that AWS have limited the number of tags per resource to 50 tags, while Azure have limited to 15. We were mindful of this and taken into account future expansion of Azure support.</p>
+
 
             <!-- Hidden back to nav link </a> -->
             <a href="#page-content" class="govuk-skip-link">Back to start of navigation tree</a>
