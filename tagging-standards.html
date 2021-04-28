@@ -862,35 +862,14 @@
 
             <span class="govuk-caption-xl">Operational excellence</span>
             <h1 class="govuk-heading-xl">Tagging standards</h1>
-<!--           
-            <table class="govuk-table">
-              <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption>
-              <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-                  <th scope="col" class="govuk-table__header">Tag key</th>
-                  <th scope="col" class="govuk-table__header">Tag formatting</th>
-                  <th scope="col" class="govuk-table__header">Tag formatting</th>
-                  <th scope="col" class="govuk-table__header">Tag formatting</th>
-                </tr>
-              </thead>
-              <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">First 6 weeks</th>
-                  <td class="govuk-table__cell">£109.80 per week</td>
-                  <td class="govuk-table__cell">£109.80 per week</td>
-                  <td class="govuk-table__cell">£109.80 per week</td>
+            <p class="govuk-body">This content explains:</p>
 
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Next 33 weeks</th>
-                  <td class="govuk-table__cell">£109.80 per week</td>
-                </tr>
-                <tr class="govuk-table__row">
-                  <th scope="row" class="govuk-table__header">Total estimated pay</th>
-                  <td class="govuk-table__cell">£4,282.20</td>
-                </tr>
-              </tbody>
-            </table> -->
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+              <li>what a tag is</li>
+              <li>why we want a tagging standard</li>
+              <li>Home Office mandatory tags </li>
+            </ul>
+
 
             <h2 id="opex_sublink_three" class="govuk-heading-l">What is a tag?</h2>
             <p class="govuk-body">A tag is a label that you assign to an AWS resource. Each tag consists of a key and value, both of which you define for each resource, and each tag key can have only one value. You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level. Tags enable you to categorise your AWS resources in different ways. For example, by purpose, owner, environment or other criteria.</p>
@@ -898,7 +877,7 @@
             <p class="govuk-body">You can add, change, or remove tags one resource at a time from each resource’s service console, service API, or the AWS CLI. Tags identify who owns the resource and the environment where it is used. They also provide additional information and context about that specific resource.</p>
 
             <h3 class="govuk-heading-m">AWS best practices</h3>
-            <p class="govuk-body">You can add, change, or remove tags one resource at a time from each resource’s service console, service API, or the AWS CLI. Tags identify who owns the resource and the environment where it is used. They also provide additional information and context about that specific resource.</p>
+            <p class="govuk-body">It's always best to incorporate AWS best practice when creating a tagging strategy. Some examples are:</p>
             
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
               <li>
@@ -930,12 +909,135 @@
               it is difficult to provide support. For example, if we identify an underutilised EC2 instance without clear tags, it makes it difficult to find the department responsible
             </li>
             <li>
-              the Home Office have over 1500 tag keys, which is untenable. Lots of tags are different variations of the same thing e.g. 25 tags of 'Cost Centre'.  
+              the Home Office have too many tag keys and there are different variations of the same tag e.g. there are 25 tags of 'Cost Centre'
             </li>
           </ul>
         
           <h2 id="opex_sublink_three" class="govuk-heading-l">Home Office Mandatory tags</h2>
           <p class="govuk-body">We have contacted product owners of Amazon Web Services (AWS) and Microsoft Azure to find out what tags they have used on their current resources. We have compiled a list of mandatory tags to implement across the whole estate. It's important to note that AWS have limited the number of tags per resource to 50 tags, while Azure have limited to 15. We were mindful of this and taken into account future expansion of Azure support.</p>
+
+          <h3 class="govuk-heading-m">Tag key</h3>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                COST_CENTRE
+              </span>
+            </summary>
+            <div>
+              <ul>
+                <li>Explanation - This is used to allocate costs to</li>
+                <li>Tag formatting - "0000000" 8 numeric characters</li>
+                <li>Example tag values - 01815042</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                ENV
+              </span>
+            </summary>
+            <div>
+              <ul>
+                <li>Explanation - Environment name standards, "prod", "dev"</li>
+                <li>Tag formatting - lowercase alphanumerical	</li>
+                <li>Example tag values - "prod" or "dev" or "test" or "sit" or "qat" or "sandbox"</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                ID
+              </span>
+            </summary>
+            <div>
+              <ul>
+                <li>Tag formatting - numerical</li>
+                <li>Example tag values - "01"</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                NAME
+              </span>
+            </summary>
+            <div>
+              <ul>
+                <li>Explanation - Programmatic tag joining up 4 user defined tags in order to produce a unique tag reference</li>
+                <li>Tag formatting - programmatic "(PROJECTID_ENV_SERVICENAME_ID)"</li>
+                <li>Example tag values - "publiccloud_prod_backupdb_01"</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                CREATED_BY	
+              </span>
+            </summary>
+            <div>
+              <ul>
+                <li>Explanation - Poise ID or digital username</li>
+                <li>Tag formatting - lowercase alphanumeric (Poise ID only)</li>
+                <li>Example tag values - "mussas1"</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                PROJECT_ID	
+              </span>
+            </summary>
+            <div>
+              <ul>
+                <li>Explanation - Should we include spaces or exclude? Should letters be repetitive between names e.g publiccloud?</li>
+                <li>Tag formatting - lowercase alphanumeric (Poise ID only)</li>
+                <li>Example tag values - "public_cloud" "service_now"</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                SERVICE_NAME		
+              </span>
+            </summary>
+            <div>
+              <ul>
+                <li>Explanation - Normally the service tag is being applied on a resource, whether its Backup Service or a Bastion Host</li>
+                <li>Tag formatting - lowercase alphanumeric</li>
+                <li>Example tag values "backupdb" "proxy1"</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                REGION	
+              </span>
+            </summary>
+            <div>
+              <ul>
+                <li>Explanation - We should only be building resources in eu-west-2</li>
+                <li>Tag formatting - lowercase alphanumeric (Poise ID only)</li>
+                <li>Example tag values - "eu-west-2"</li>
+              </ul>
+            </div>
+          </details>
+
+
 
 
             <!-- Hidden back to nav link </a> -->
