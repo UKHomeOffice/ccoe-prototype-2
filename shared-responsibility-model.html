@@ -524,7 +524,16 @@
             </div>
 
             <span class="govuk-caption-xl">Security</span>
+
             <h1 class="govuk-heading-xl">Shared responsibility model</h1>
+            <p class="govuk-body">This content explains:</p>
+
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+              <li>what the cloud shared responsibility model is</li>
+              <li>Infrastructure, Platform and Software as a service (IaaS, PaaS, SaaS) explanations</li>
+              <li>The responsibility of the Home Office and Cloud Providers</li>
+              <li>the Home Office responsibility model </li>
+            </ul>
 
             <h2 class="govuk-heading-l">What is the shared responsibility model?</h2>
             <p class="govuk-body">Cloud Security is fundamentally based on what public cloud providers term as the
@@ -539,26 +548,19 @@
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-            <details class="govuk-details" data-module="govuk-details">
-              <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                  Cloud services (Infratructure, Software and Platform as a Service)
-                </span>
-              </summary>
+              
+            <h3 class="govuk-heading-m">Infrastructure, Platform and Software as a service (IaaS, PaaS, SaaS) explanations</h3>
               <div>
-                <p>Cloud services can be split between Infrastructure, Platform or Software as a service.</p>
-                <ul>
+                <p class="govuk-body">Cloud services can be split between IaaS, PaaS, SaaS.</p>
+                <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
                   <li>Infrastructure as a Service (IaaS) are services provided within the cloud where the Home
                     Office operates the infrastructure but does not control the physical infrastructure.
                     This gives users the most control over services.</li>
-                  <br>
                   <li>Platform as a Service/Container Services (PaaS/CS) removes the need for organisations to
                     manage the underlying infrastructure.
                     Cloud providers are responsible for the platform and some application management as well as the
                     security of the operating systems and networks (except for Firewall configuration, for example
                     security groups).</li>
-                  <br>
                   <li>Software as a Service/Abstract Services (SaaS/AS) are cloud provided services where the
                     customer has the fewest responsibilities to secure the service.
                     The cloud provider is responsible for the security of network, platform, OS and infrastructure. The
@@ -567,34 +569,449 @@
                     These responsibilities are split over several Home Office teams.</li>
                 </ul>
               </div>
-            </details>
+            
+            <h2 class="govuk-heading-l">Cloud Providers and Home Office responsibility model</h2>
+            <h3 class="govuk-heading-m">Enterprise Services</h3>
 
-            <h3 class="govuk-heading-m">Cloud Providers and Home Office Responsibility Model</h3>
-            <p class="govuk-body">The responsibility model split between the Cloud Provider and the Home Office is shown
-              in the diagram below.</p>
-            <img src="images/cloud_providers_and_home_office_responsibility_model-566x500.png" style="border: solid"
-              alt="Cloud Providers and Home Office Responsibility Model">
-            <p class="govuk-body">The functions within the model can be broken down between the Home Office and Cloud
-              Provider, as shown in the diagram below.</p>
-            <img src="images/aaS_breakdown diagram.png" style="border: solid"
-              alt="Responsibility breadkdown between IaaS, PaaS and SaaS">
+            <table class="govuk-table">
+              <span class="govuk-caption-m">The table below shows who has responsibility between the Home Office (HO) or Cloud (CP) across PaaS, SaaS and IaaS in Enterprise Services.</span>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Responsibility</th>
+                  <th scope="col" class="govuk-table__header">SaaS</th>
+                  <th scope="col" class="govuk-table__header">PaaS</th>   
+                  <th scope="col" class="govuk-table__header">IaaS</th>    
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">End point and devices</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">ACM</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>        
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Tagging</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Common IaC</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Single view for costs</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Cost optimisation</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Billing</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Root account management</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="govuk-heading-m">Enterprise Services and Platforms</h3>
+            <table class="govuk-table">
+              <span class="govuk-caption-m">The table below shows who has responsibility between the Home Office (HO) or Cloud  (CP) across PaaS, SaaS and IaaS.</span>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Responsibility</th>
+                  <th scope="col" class="govuk-table__header">SaaS</th>
+                  <th scope="col" class="govuk-table__header">PaaS</th>   
+                  <th scope="col" class="govuk-table__header">IaaS</th>    
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Account identities</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Access controls</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Monitoring usage and user audit</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Access and authentication in cloud</th>
+                  <td class="govuk-table__cell">HO and CP</td>
+                  <td class="govuk-table__cell">HO and CP</td>
+                  <td class="govuk-table__cell">HO and CP</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="govuk-heading-m">Enterprise Services and Cloud Operations</h3>
+            <table class="govuk-table">
+              <span class="govuk-caption-m">The table below shows who has responsibility between the Home Office (HO) or Cloud  (CP) across PaaS, SaaS and IaaS.</span>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Responsibility</th>
+                  <th scope="col" class="govuk-table__header">SaaS</th>
+                  <th scope="col" class="govuk-table__header">PaaS</th>   
+                  <th scope="col" class="govuk-table__header">IaaS</th>    
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Incident management</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="govuk-heading-m">Platforms</h3>
+            <table class="govuk-table">
+              <span class="govuk-caption-m">The table below shows who has responsibility between the Home Office (HO) or Cloud  (CP) across PaaS, SaaS and IaaS.</span>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Responsibility</th>
+                  <th scope="col" class="govuk-table__header">SaaS</th>
+                  <th scope="col" class="govuk-table__header">PaaS</th>   
+                  <th scope="col" class="govuk-table__header">IaaS</th>    
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Operating system</th>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                  <td class="govuk-table__cell">HO and CP</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Logging provision</th>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                  <td class="govuk-table__cell">HO and CP</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Storage and encryption</th>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Network controls</th>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Kernel hardening</th>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="govuk-heading-m">Platforms and portfolios</h3>
+            <table class="govuk-table">
+              <span class="govuk-caption-m">The table below shows who has responsibility between the Home Office (HO) or Cloud  (CP) across PaaS, SaaS and IaaS.</span>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Responsibility</th>
+                  <th scope="col" class="govuk-table__header">SaaS</th>
+                  <th scope="col" class="govuk-table__header">PaaS</th>   
+                  <th scope="col" class="govuk-table__header">IaaS</th>    
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Web application security</th>
+                  <td class="govuk-table__cell">HO and CP</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Deployment</th>
+                  <td class="govuk-table__cell">HO and CP</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Operations</th>
+                  <td class="govuk-table__cell">Cloud provider</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Monitoring usage and user audit</th>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">Home Office</td>
+                  <td class="govuk-table__cell">HO and CP</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 class="govuk-heading-m">Home Office and Cloud Providers responsibility table</h3>
+            <table class="govuk-table">
+              <span class="govuk-caption-m">The table below shows who has the responsibility between the Home Office (HO) and Cloud Providers (CP) across PaaS, SaaS and IaaS. It also shows cloud features responsibility across different business areas (e.g. Enterprise Services teams), Platforms (e.g. EBSA, ACP, LECP), Portfolios (e.g. BICS, PPPT) and HO capabilities such as CSOC/ITOC and HOCS. It is noted that individual areas will have a slightly different split of responsibilities, and this should be outlined within security and service wrappers.</span>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header">Responsibility</th>
+                  <th scope="col" class="govuk-table__header">SaaS</th>
+                  <th scope="col" class="govuk-table__header">PaaS</th>   
+                  <th scope="col" class="govuk-table__header">IaaS</th>
+                  <th scope="col" class="govuk-table__header">Business area(s)</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">End point and devices</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Enterprise Services</td>
+                </tr>
+                <th scope="row" class="govuk-table__header">ACM</th>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">Enterprise Services</td>        
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Tagging</th>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">Enterprise Services</td>        
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Common IaC</th>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">Enterprise Services</td>        
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Single view for costs</th>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">Enterprise Services</td>        
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Cost optimisation</th>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">Enterprise Services</td>        
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Billing</th>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">Enterprise Services</td>        
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Root account management</th>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">HO</td>
+                <td class="govuk-table__cell">Enterprise Services</td>        
+              </tr>     
+              <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Account identities</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Enterprise Services / Platforms</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Access controls</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Enterprise Services / Platforms</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Deployment</th>
+                  <td class="govuk-table__cell">HO / CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Enterprise Services / Platforms</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Access and authentication in cloud</th>
+                  <td class="govuk-table__cell">HO / CP</td>
+                  <td class="govuk-table__cell">HO / CP</td>
+                  <td class="govuk-table__cell">HO / CP</td>
+                  <td class="govuk-table__cell">Enterprise Services / Platforms</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Incident management</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Enterprise Services / Cloud Ops</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Network controls</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO / CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Platforms</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Operating system</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO / CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Platforms</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Logging provision</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO / CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Platforms</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Storage and encryption</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Platforms</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Kernel hardening</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Platforms</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Monitoring usage and user audit</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Platforms / Portfolios</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Deployment</th>
+                  <td class="govuk-table__cell">HO / CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Platforms / Portfolios</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Web application security</th>
+                  <td class="govuk-table__cell">HO / CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Platforms / Portfolios</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Operations</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Platforms / Portfolios</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Customer data</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Portfolios</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Risk acceptance advice</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Portfolios / HOCS</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Security and monitoring</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Cloud ops</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Security and monitoring</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">Cloud ops</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Standards and controls</th>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">HO</td>
+                  <td class="govuk-table__cell">All business areas</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Networking</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">N/A</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Boot</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">N/A</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Hardening</th>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">CP</td>
+                  <td class="govuk-table__cell">N/A</td>
+                </tr>
+              </tbody>
+            </table>
 
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
 
             <!-- Start of Accordian -->
-            <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-              <div class="govuk-accordion__section ">
-                <div class="govuk-accordion__section-header">
-                  <h2 class="govuk-accordion__section-heading">
-                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                      Areas of responsibility explanations
-                    </span>
-                  </h2>
-                </div>
+                <h3 class="govuk-heading-m">Areas of responsibility explanations</h3>
 
-                <div id="accordion-default-content-1" class="govuk-accordion__section-content"
-                  aria-labelledby="accordion-default-heading-1">
                   <details class="govuk-details" data-module="govuk-details">
                     <summary class="govuk-details__summary">
                       <span class="govuk-details__summary-text">
@@ -828,9 +1245,6 @@
                         SOC 2 reports. The provider is also responsible for the virtualisation.</p>
                   </details>
                 </div>
-
-              </div>
-            </div>
 
             <h3 class="govuk-heading-m">Home Office responsibility model</h3>
 
