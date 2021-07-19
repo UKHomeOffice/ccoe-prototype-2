@@ -8924,3 +8924,6 @@ p code {
 .app-prose-scope>:last-child {
   margin-bottom: 0
 }
+.arrow {
+  color: #505a5f;
+}
