@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Who can raise tickets - Cloud Centre of Excellence</title>
+  <title>Sandbox best practices</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b0c0c">
 
@@ -407,7 +407,6 @@
                   </a>
                 </li>
 
-
               </ul>
             </li>
 
@@ -461,7 +460,7 @@
 
           <h4 id="side-nav" class="app-subnav__theme">AWS IAM account requests</h4>
           <ul class="app-subnav__section">
-            <li class="app-subnav__section-item app-subnav__section-item--current">
+            <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="who-can-raise-tickets.html">Who
                 can raise tickets</a>
             </li>
@@ -473,16 +472,20 @@
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
                 href="how-to-create-an-iam-request.html">How to create an IAM request</a>
             </li>
-            <h4 id="side-nav" class="app-subnav__theme">Sandbox</h4>
-            <ul class="app-subnav__section">
-              <li class="app-subnav__section-item">
-                <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="sandbox-best-practices.html">Sandbox best practices</a>
-              </li>
-              <li class="app-subnav__section-item">
-                <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                  href="sandbox-access.html">Sandbox access</a>
-              </li>
-            </ul>  
+          </ul>
+
+          <h4 id="side-nav" class="app-subnav__theme">Sandbox</h4>
+          <ul class="app-subnav__section">
+              <li class="app-subnav__section-item app-subnav__section-item--current">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="sandbox-best-practices.html">Sandbox best practices</a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
+                href="sandbox-access.html">Sandbox access</a>
+            </li>
+          </ul>
+
+
         </nav>
       </div>
 
@@ -501,33 +504,63 @@
                   <a class="govuk-breadcrumbs__link" href="public-cloud-services.html">Public cloud services</a>
                 </li>
                 <li class="govuk-breadcrumbs__list-item">
-                  <a class="govuk-breadcrumbs__link" href="who-can-raise-tickets.html">Who can raise tickets</a>
+                  <a class="govuk-breadcrumbs__link" href="sandbox-best-practices.html">Sandbox best practices</a>
                 </li>
             </div>
 
-            <span class="govuk-caption-xl">AWS IAM account requests</span>
-            <h1 class="govuk-heading-xl">Who can raise tickets</h1>
+            <span class="govuk-caption-xl">AWS Sandbox</span>
+            <h1 class="govuk-heading-xl">Sandbox best practices</h1>
 
-            <!-- Start of training in the ho section -->
-            <p class="govuk-body">The Public Cloud Team manage Identity and Access Management (IAM) on AWS
-              in the Home Office. If you want to make any changes to an AWS account
-              such as creating/deleting an
-              account, adding new roles to an account or resetting a password, it needs to be logged on the Jira board
-              as
-              explained in the <a href="how-to-create-an-iam-request.html">How to create an IAM request</a> page.</p>
+            <p class="govuk-body">This content explains:</p>
 
-            <!-- Hidden back to nav link </a> -->
-            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+              <li><a href="#sandbox_explanation" class="govuk-link">what a sandbox is</a></li>
+              <li><a href="#best_practices" class="govuk-link">sandbox best practices</a></li>
+            </ul>
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
+            <h2 id="sandbox_explanation" class="govuk-heading-l">What is a sandbox?</h2>
+            <p class="govuk-body">A sandbox is a copy of your production environment. The changes you make in the sandbox does not affect your actual production environment. 
+              You can use sandboxes to make changes in a test environment and experiment without any consequences.</p>
+
+              <h2 id="best_practices" class="govuk-heading-l">Sandbox best practices</h2>
+
+            <h3 class="govuk-heading-m">Secure VPC's</h3>
+            <p class="govuk-body">Secure VPC's are mandatory when using the sandbox. Users must: </p>
+  
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>Approvers can raise requests on behalf of their colleagues. An example of this would be to request for
-                a user to be removed after they have left the Home Office.</li>
-              <li>Cloud user can raise tickets to make changes to their existing account</li>
-              <li>New users requesting a cloud account</li>
+              <li>Disable any default rules that allow access to the open internet because most things do not need this</li>
+              <li>Not allow 0.0.0.0/0 connections as this allows all outbound traffic access</li>
+            </ul>
+            <p class="govuk-body">For more information view <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-best-practices.html">VPC best practices</a>.</p> 
+
+
+            <h3 class="govuk-heading-m">Secure S3 buckets</h3>
+            <p class="govuk-body">Configuration rules are being put in place to disable public access to S3 buckets. S3 best practices:</p>
+  
+            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+              <li>AWS S3 buckets do not allow public access</li>
+              <li> Ensure AWS S3 object versioning is enabled for an additional level of data protection</li>
+              <li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html">Security best practices for Amazon S3</a></li>
             </ul>
 
+            <h3 class="govuk-heading-m">Architecture (infrastructure as code)</h3>
+            <p class="govuk-body">The Home Office promotes infrastructure as code. This means when you are building something out in the sandbox area, you should use the 
+              <a href="https://docs.aws.amazon.com/cli/latest/reference/imagebuilder/create-infrastructure-configuration.html">AWS CLI</a>  
+              rather than the AWS console interface. For AWS cloud development the built-in choice for infrastructure as code is 
+              <a href="https://aws.amazon.com/cloudformation">AWS cloudformation</a>.</p>
+
+              <h3 class="govuk-heading-m">Wipe the sandbox</h3>
+            <p class="govuk-body">Users are responsible for wiping the sandbox after any project type ensuring no data or infrastructure is left behind. 
+              If this is not done, then the PCT will introduce a forced sandbox wipe every week via a lambda script. We will also run cost checks daily to 
+              ensure that users are not spending unnecessary on the account. </p>
+
+              <h3 class="govuk-heading-m">Lambda script</h3>
+              <p class="govuk-body">The PCT have implemented a script that auto tags resources users have created with their arn (this shows your username) and 
+                the date/time when they are created. This allows the PCT to see activity in the Sandbox account, including which sandboxes have not been wiped. </p>
+  
+          
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
 

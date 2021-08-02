@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Who can raise tickets - Cloud Centre of Excellence</title>
+  <title>Sandbox access</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b0c0c">
 
@@ -407,7 +407,6 @@
                   </a>
                 </li>
 
-
               </ul>
             </li>
 
@@ -461,7 +460,7 @@
 
           <h4 id="side-nav" class="app-subnav__theme">AWS IAM account requests</h4>
           <ul class="app-subnav__section">
-            <li class="app-subnav__section-item app-subnav__section-item--current">
+            <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="who-can-raise-tickets.html">Who
                 can raise tickets</a>
             </li>
@@ -473,16 +472,20 @@
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
                 href="how-to-create-an-iam-request.html">How to create an IAM request</a>
             </li>
-            <h4 id="side-nav" class="app-subnav__theme">Sandbox</h4>
-            <ul class="app-subnav__section">
-              <li class="app-subnav__section-item">
-                <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="sandbox-best-practices.html">Sandbox best practices</a>
-              </li>
-              <li class="app-subnav__section-item">
-                <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                  href="sandbox-access.html">Sandbox access</a>
-              </li>
-            </ul>  
+          </ul>
+
+          <h4 id="side-nav" class="app-subnav__theme">Sandbox</h4>
+          <ul class="app-subnav__section">
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="sandbox-best-practices.html">Sandbox best practices</a>
+            </li>
+            <li class="app-subnav__section-item app-subnav__section-item--current">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
+                href="sandbox.html">Sandbox access</a>
+            </li>
+          </ul>
+
+
         </nav>
       </div>
 
@@ -501,32 +504,77 @@
                   <a class="govuk-breadcrumbs__link" href="public-cloud-services.html">Public cloud services</a>
                 </li>
                 <li class="govuk-breadcrumbs__list-item">
-                  <a class="govuk-breadcrumbs__link" href="who-can-raise-tickets.html">Who can raise tickets</a>
+                  <a class="govuk-breadcrumbs__link" href="sandbox-best-practices.html">Sandbox access</a>
                 </li>
             </div>
 
-            <span class="govuk-caption-xl">AWS IAM account requests</span>
-            <h1 class="govuk-heading-xl">Who can raise tickets</h1>
+            <span class="govuk-caption-xl">AWS Sandbox</span>
+            <h1 class="govuk-heading-xl">Sandbox best practices</h1>
 
-            <!-- Start of training in the ho section -->
-            <p class="govuk-body">The Public Cloud Team manage Identity and Access Management (IAM) on AWS
-              in the Home Office. If you want to make any changes to an AWS account
-              such as creating/deleting an
-              account, adding new roles to an account or resetting a password, it needs to be logged on the Jira board
-              as
-              explained in the <a href="how-to-create-an-iam-request.html">How to create an IAM request</a> page.</p>
-
-            <!-- Hidden back to nav link </a> -->
-            <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
-
-            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            <p class="govuk-body">This content explains:</p>
 
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>Approvers can raise requests on behalf of their colleagues. An example of this would be to request for
-                a user to be removed after they have left the Home Office.</li>
-              <li>Cloud user can raise tickets to make changes to their existing account</li>
-              <li>New users requesting a cloud account</li>
+              <li><a href="#sandbox_accounts" class="govuk-link">Home Office sandbox accounts</a></li>
+              <li><a href="#sandbox_access" class="govuk-link">how to get access to sandbox accounts</a></li>
             </ul>
+
+            <h2 id="sandbox_accounts" class="govuk-heading-l">Home Office sandbox accounts</h2>
+
+            <table class="govuk-table">
+              <span class="govuk-caption-m">The table below shows the current sandboxes dev areas available to the Home Office.</span>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-half">Name</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Account number</th>
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Email</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">CTI: Tooling Sandpit</th>
+                  <td class="govuk-table__cell">618488371083</td>
+                  <td class="govuk-table__cell">aws-618488371083@homeoffice.gsi.gov.uk</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">DDAT: Tooling Sandpit</th>
+                  <td class="govuk-table__cell">22372645419</td>
+                  <td class="govuk-table__cell">aws-22372645419@homeoffice.gsi.gov.uk</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">ES: CSOC DRI SANDBOX</th>
+                  <td class="govuk-table__cell">790037552047</td>
+                  <td class="govuk-table__cell">aws-790037552047@homeoffice.gov.uk</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">IPT: Security Sandpit</th>
+                  <td class="govuk-table__cell">135268010021</td>
+                  <td class="govuk-table__cell">aws-135268010021@homeoffice.gsi.gov.uk</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">IPT: Tooling Sandpit</th>
+                  <td class="govuk-table__cell">136829401848</td>
+                  <td class="govuk-table__cell">aws-136829401848@homeoffice.gsi.gov.uk</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">PPPT: ViSOR Sandpit</th>
+                  <td class="govuk-table__cell">697688205970</td>
+                  <td class="govuk-table__cell">aws-697688205970@homeoffice.gov.uk </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+
+            <!-- Start of training in the ho section -->
+            <p class="govuk-body">The PCT having ownership of the CTI: 
+              Tooling Sandpit which is the HO Central Sandpit Area. This area has been used by number of teams to test deployments and methodologies 
+              before they touch Pre-Prod or Production accounts.</p>
+              
+            <p class="govuk-body">The other sandboxes/sandpits are managed by the teams who own them, and they are all in use for testing and training purposes. </p>
+  
+            <h2 id="sandbox_access"class="govuk-heading-l">How to get access to sandbox accounts</h2>
+            <p class="govuk-body">To get access to the above sandbox accounts please follow our <a href = "who-can-raise-tickets.html">IAM ticket raising process</a> and include the sandbox details you want access to. 
+              Please note the CTI Tooling Sandpit does not require approval when making an IAM request but all other sandboxes require approval as normal.</p>
 
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
