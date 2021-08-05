@@ -588,12 +588,12 @@
               Office cloud users.</p>
             <p class="govuk-body">This content explains:</p>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>what preventive guardrails are</li>
-              <li>how to implement preventive guardrails</li>
-              <li>preventive OU mapping</li>
-              <li>monitoring preventive guardrails</li>
-              <li>cost of preventive guardrails</li>
-              <li>links to proposed and future guardrails</li>
+              <li><a href="#preventive_guardrails" class="govuk-link">what preventive guardrails are</a></li>
+              <li><a href="#implement_guardrails" class="govuk-link">how to implement preventive guardrails</a></li>
+              <li><a href="#preventive_OU_mapping" class="govuk-link">OU mapping</a></li>
+              <li><a href="#monitoring_preventive_guardrails" class="govuk-link">monitoring preventive guardrails</a></li>
+              <li><a href="#cost" class="govuk-link">cost of preventive guardrails</a></li>
+              <li><a href="#future_guardrails" class="govuk-link">proposed and future guardrails</a></li>
             </ul>
 
             <!-- Hidden back to nav link </a> -->
@@ -603,7 +603,7 @@
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
 
-            <h2 class="govuk-heading-l">Preventive guardrails</h2>
+            <h2 id="preventive_guardrails" class="govuk-heading-l">Preventive guardrails</h2>
             <p class="govuk-body">A preventive guardrail prevents and denies actions within AWS accounts. They disallow
               actions that would lead to policy violations. The status of a preventive guardrail is either enforced or
               not enabled.</p>
@@ -613,7 +613,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">Implement preventive guardrails</h2>
+            <h2 id="implement_guardrails"class="govuk-heading-l">Implement preventive guardrails</h2>
             <p class="govuk-body">You implement preventive guardrails using <a
                 href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html#not-restricted-by-scp/">Service
                 Control Policies (SCPs)</a> in AWS organisations. Organisations applies a FullAWSAccess policy across
@@ -632,7 +632,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">OU mapping</h2>
+            <h2 id="preventive_OU_mapping" class="govuk-heading-l">OU mapping</h2>
             <p class="govuk-body">Guardrails can be applied to either individual accounts, or AWS organisations OUs.
               Applying them to individual OU's simplifies management because they also apply to all child accounts under
               the OU. It also allows the boundary of guardrail groups to be easily identified.</p>
@@ -646,7 +646,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">Monitoring</h2>
+            <h2 id="monitoring_preventive_guardrails" class="govuk-heading-l">Monitoring</h2>
             <p class="govuk-body">Although active monitoring through dashboards is not supported by default. These can
               be monitored through CloudTrail logs to identify unauthorised activity which is blocked. Once implemented
               Preventive guardrails do not need to be actively monitored. Although, they should be regularly reviewed.
@@ -657,12 +657,12 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">Costs</h2>
+            <h2 id="cost" class="govuk-heading-l">Costs</h2>
             <p class="govuk-body">There are no additional costs for implementing preventive guardrails.</p>
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-            <h2 class="govuk-heading-l">Proposed and future guardrails </h2>
+            <h2 id="future_guardrails" class="govuk-heading-l">Proposed and future guardrails </h2>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
               <li><a

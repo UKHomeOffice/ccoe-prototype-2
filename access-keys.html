@@ -580,18 +580,19 @@
             <p class="govuk-body">This content explains:</p>
 
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>what access keys are</li>
-              <li>how to rotate your access keys</li>
-              <li>the Home Office access key policy</li>
-              <li>access keys for AWS services</li>
-              <li>the difference between long-lived and temporary access keys</li>
+
+              <li><a href="#accesskeys_explanation" class="govuk-link">what access keys are</a></li>
+              <li><a href="#rotate_keys" class="govuk-link">how to rotate your access keys</a></li>
+              <li><a href="#policy" class="govuk-link">The Home Office access key policy</a></li>
+              <li><a href="#AWS_services" class="govuk-link">access keys for AWS services</a></li>
+              <li><a href="#temporary" class="govuk-link">temporary access keys</a></li>
             </ul>
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-            <h2 class="govuk-heading-l">What are access keys?</h2>
+            <h2 id="accesskeys_explanation" class="govuk-heading-l">What are access keys?</h2>
             <p class="govuk-body">AWS access keys are long-term credentials for IAM users. Access keys consist of an ID
               and a secret and provide programmatic access. Programmatic access is for services access, for example
               the S3 Bucket. Programmatic access is used to automate processes and actions to allow services to interact
@@ -603,7 +604,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-            <h2 class="govuk-heading-l">Rotating access keys</h2>
+            <h2 id="rotate_keys" class="govuk-heading-l">Rotating access keys</h2>
 
             <p class="govuk-body">Follow the AWS step-by-step guidance for <a
                 href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey">rotating
@@ -630,7 +631,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-            <h2 class="govuk-heading-l">Home Office access key policy</h2>
+            <h2 id="policy" class="govuk-heading-l">Home Office access key policy</h2>
 
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
               <li>The PCT are implementing the following policy for access keys, to reduce the risks to the Home Office.
@@ -661,7 +662,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-            <h2 class="govuk-heading-l">How to use access keys in different AWS services</h2>
+            <h2 id="AWS_services" class="govuk-heading-l">How to use access keys in different AWS services</h2>
 
             <h3 class="govuk-heading-m">Amazon EC2</h3>
 
@@ -693,7 +694,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-            <h2 class="govuk-heading-l">Temporary access keys</h2>
+            <h2 id="temporary" class="govuk-heading-l">Temporary access keys</h2>
 
             <p class="govuk-body">AWS recommends the use of temporary access keys through the use of the Security Token
               Service (STS) instead of using long term access keys. The STS can create and provide trusted users with

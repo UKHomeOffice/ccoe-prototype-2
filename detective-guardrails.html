@@ -587,14 +587,15 @@
             </p>
             <p class="govuk-body">This content explains:</p>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>what detective guardrails are</li>
-              <li>how to implement detective guardrails</li>
-              <li>guardrails organisational unit (OU) mapping</li>
-              <li>monitoring detective guardrails</li>
-              <li>cost of detective guardrails</li>
-              <li>links to proposed and future guardrails</li>
-
+              <li><a href="#detective_guardrails" class="govuk-link">what detective guardrails are</a></li>
+              <li><a href="#implement_guardrails" class="govuk-link">how to implement detective guardrails</a></li>
+              <li><a href="#detective_OU_mapping" class="govuk-link">OU mapping</a></li>
+              <li><a href="#monitoring_detective_guardrails" class="govuk-link">monitoring detective guardrails</a></li>
+              <li><a href="#cost" class="govuk-link">cost of detective guardrails</a></li>
+              <li><a href="#future_guardrails" class="govuk-link">proposed and future guardrails</a></li>
             </ul>
+
+
 
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
@@ -604,7 +605,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">Detective guardrails</h2>
+            <h2 id="detective_guardrails" class="govuk-heading-l">Detective guardrails</h2>
             <p class="govuk-body">A detective guardrail detects non-compliant resources within accounts. Alerts are then
               sent to a dashboard with guardrails either being compliant, non-compliant or not enabled. A detective
               guardrail does not prevent or remediate non-compliant resources. It will simply flag non-compliance.
@@ -615,7 +616,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">Implement detective guardrails</h2>
+            <h2 id="implement_guardrails" class="govuk-heading-l">Implement detective guardrails</h2>
             <p class="govuk-body">To implement detective guardrails, you need <a
                 href="https://aws.amazon.com/config/">AWS Config</a> and an active Config recorder in each AWS account.
               You can then implement the rules in one of two ways.</p>
@@ -637,7 +638,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">OU mapping</h2>
+            <h2 id="detective_OU_mapping" class="govuk-heading-l">OU mapping</h2>
             <p class="govuk-body">Guardrails can be applied to either individual accounts, or AWS organisations OUs.
               Applying them to individual OU's simplifies management because they also apply to all child accounts under
               the OU. It also allows the boundary of guardrail groups to be easily identified.</p>
@@ -651,7 +652,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">Monitoring</h2>
+            <h2 id="monitoring_detective_guardrails" class="govuk-heading-l">Monitoring</h2>
             <p class="govuk-body">Detective guardrails are the same if you implement them using AWS Config or AWS
               Security Hub. They require a team to review the results and take actions from them. In the future they
               must implement reactive security controls and automation.</p>
@@ -661,7 +662,7 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">Costs</h2>
+            <h2 id="cost"class="govuk-heading-l">Costs</h2>
             <p class="govuk-body">Due to detective guardrails use of AWS Config, they do have costs associated with
               them. So, there will be additional charges in each account. There are charges for each configuration item
               recorded per account, per month and the number of config rule evaluations undertaken on resources per
@@ -671,7 +672,7 @@
                 pricing</a></p>
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
-            <h2 class="govuk-heading-l">Proposed and future guardrails </h2>
+            <h2 id="future_guardrails" class="govuk-heading-l">Proposed and future guardrails </h2>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
 
               <li><a
