@@ -583,8 +583,6 @@
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
               <li><a href="#proposed_OU" class="govuk-link">proposed OU Structure</a></li>
               <li><a href="#OU_functions" class="govuk-link">OU functions</a></li>
-              <li>OU structure</li>
-              <li>AWS Control Tower</li>
             </ul>
 
             <!-- Hidden back to nav link </a> -->
@@ -599,7 +597,6 @@
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
               <li>Needs to be a flexible and scalable organisational unit (OU) structure to support a range of users and
                 use cases</li>
-              <li>The potential use of AWS Control Tower with different areas of the Home Office in the future</li>
               <li>Security guardrails</li>
               <li>Service Control Policies (SCP) are an organisation policy that is used to manage permissions within an
                 organisation. SCPs are used to manage permissions within an organisation and can be applied against
@@ -689,19 +686,6 @@
               created. Although this would be by exception and where there is a clear requirement for different
               guardrails such as SCPs.</p>
             <img src="images/Tenant_OU.png" style="border: solid" alt="Cproposed OU structure">
-
-            <h2 class="govuk-heading-l">AWS Control Tower</h2>
-            <p class="govuk-body">The Home Office may use <a
-                href="https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html">Control
-                Tower</a> in the future within different areas of the Home Office. Therefore, our proposed OU structure
-              has taken control tower into consideration. This is to simplify the transfer of accounts and mapping from
-              the existing AWS organisations OU structure to Control Tower. It also means guardrails can be quickly
-              mapped and implemented as accounts are transferred between the solutions.</p>
-            <p class="govuk-body">As the Home Office looks to move services to AWS Control Tower there are certain
-              limitations that should be noted. This may affect how the OU structure is implemented. Only top level OUs
-              are accessible by and managed by AWS Control Tower. Guardrails can flow to nested OUs, but they cannot be
-              managed directly by control tower. This has some potential effects on viewing the compliance of accounts
-              in those nested OUs from the Control Tower console as they may be shown in a drift state.</p>
 
             <!-- Hidden back to nav link </a> -->
             <a href="#page-content" class="govuk-skip-link">Back to start of navigation tree</a>
