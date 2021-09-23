@@ -8951,7 +8951,10 @@ p code {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 }
-
+.app-whats-new {
+  border-bottom: 1px solid #b1b4b6;
+  background-color: #f8f8f8;
+}
 /*Pagination CSS*/
 @media (min-width: 48.0625em) {
   .moj-pagination {
