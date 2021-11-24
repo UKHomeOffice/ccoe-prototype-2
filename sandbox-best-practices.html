@@ -98,6 +98,12 @@
               <ul class="app-mobile-nav__list">
 
                 <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="aws-embrace.html">
+                    AWS embrace
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
                   <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
                     href="role-based-training.html">
                     Role based training
@@ -145,28 +151,8 @@
 
                 <li class="app-mobile-nav__subnav-item">
                   <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
-                    href="upcoming-aws-courses.html">
-                    Upcoming AWS courses
-                  </a>
-                </li>
-
-                <li class="app-mobile-nav__subnav-item">
-                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
-                    href="exclusive-courses.html">
-                    - Exclusive courses
-                  </a>
-                </li>
-
-                <li class="app-mobile-nav__subnav-item">
-                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
-                    href="standard-courses.html">
-                    - Standard courses
-                  </a>
-                </li>
-
-                <li class="app-mobile-nav__subnav-item">
-                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="aws-e-learning.html">
-                    AWS e-Learning
+                    href="aws-training-and-learning.html">
+                    AWS training and learning
                   </a>
                 </li>
 
@@ -195,7 +181,8 @@
 
 
                 <li class="app-mobile-nav__subnav-item">
-                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="cloud-skills-challenge.html">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="cloud-skills-challenge.html">
                     Cloud skills challenge
                   </a>
                 </li>
@@ -258,6 +245,12 @@
                 <li class="app-mobile-nav__subnav-item">
                   <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="tagging-standards.html">
                     Tagging standards
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="trusted-advisor.html">
+                    AWS Trusted Advisor
                   </a>
                 </li>
 
@@ -399,7 +392,8 @@
             </a>
           </div>
 
-          <ul class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav app-mobile-nav__subnav--active"
+          <ul
+            class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav app-mobile-nav__subnav--active"
             aria-label="Public cloud services">
             <li class="app-mobile-nav__subnav-item">
               <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="public-cloud-services.html">
@@ -451,8 +445,7 @@
                 </li>
 
                 <li class="app-mobile-nav__subnav-item">
-                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
-                    href="sandbox-access.html">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="sandbox-access.html">
                     Sandbox access
                   </a>
                 </li>
@@ -527,12 +520,13 @@
 
           <h4 id="side-nav" class="app-subnav__theme">Sandbox</h4>
           <ul class="app-subnav__section">
-              <li class="app-subnav__section-item app-subnav__section-item--current">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="sandbox-best-practices.html">Sandbox best practices</a>
+            <li class="app-subnav__section-item app-subnav__section-item--current">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
+                href="sandbox-best-practices.html">Sandbox best practices</a>
             </li>
             <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                href="sandbox-access.html">Sandbox access</a>
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="sandbox-access.html">Sandbox
+                access</a>
             </li>
           </ul>
 
@@ -572,46 +566,61 @@
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
             <h2 id="sandbox_explanation" class="govuk-heading-l">What is a sandbox?</h2>
-            <p class="govuk-body">A sandbox is a copy of your production environment. The changes you make in the sandbox does not affect your actual production environment. 
+            <p class="govuk-body">A sandbox is a copy of your production environment. The changes you make in the
+              sandbox does not affect your actual production environment.
               You can use sandboxes to make changes in a test environment and experiment without any consequences.</p>
 
-              <h2 id="best_practices" class="govuk-heading-l">Sandbox best practices</h2>
+            <h2 id="best_practices" class="govuk-heading-l">Sandbox best practices</h2>
 
             <h3 class="govuk-heading-m">Secure VPC's</h3>
             <p class="govuk-body">Secure VPC's are mandatory when using the sandbox. Users must: </p>
-  
+
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>Disable any default rules that allow access to the open internet because most things do not need this</li>
+              <li>Disable any default rules that allow access to the open internet because most things do not need this
+              </li>
               <li>Not allow 0.0.0.0/0 connections as this allows all outbound traffic access</li>
             </ul>
-            <p class="govuk-body">For more information view <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-best-practices.html">VPC best practices</a>.</p> 
+            <p class="govuk-body">For more information view <a
+                href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-best-practices.html">VPC best
+                practices</a>.</p>
 
 
             <h3 class="govuk-heading-m">Secure S3 buckets</h3>
-            <p class="govuk-body">Configuration rules are being put in place to disable public access to S3 buckets. S3 best practices:</p>
-  
+            <p class="govuk-body">Configuration rules are being put in place to disable public access to S3 buckets. S3
+              best practices:</p>
+
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
               <li>AWS S3 buckets do not allow public access</li>
               <li> Ensure AWS S3 object versioning is enabled for an additional level of data protection</li>
-              <li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html">Security best practices for Amazon S3</a></li>
+              <li><a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html">Security
+                  best practices for Amazon S3</a></li>
             </ul>
 
             <h3 class="govuk-heading-m">Architecture (infrastructure as code)</h3>
-            <p class="govuk-body">The Home Office promotes infrastructure as code. This means when you are building something out in the sandbox area, you should use the 
-              <a href="https://docs.aws.amazon.com/cli/latest/reference/imagebuilder/create-infrastructure-configuration.html">AWS CLI</a>  
-              rather than the AWS console interface. For AWS cloud development the built-in choice for infrastructure as code is 
-              <a href="https://aws.amazon.com/cloudformation">AWS cloudformation</a>.</p>
+            <p class="govuk-body">The Home Office promotes infrastructure as code. This means when you are building
+              something out in the sandbox area, you should use the
+              <a
+                href="https://docs.aws.amazon.com/cli/latest/reference/imagebuilder/create-infrastructure-configuration.html">AWS
+                CLI</a>
+              rather than the AWS console interface. For AWS cloud development the built-in choice for infrastructure as
+              code is
+              <a href="https://aws.amazon.com/cloudformation">AWS cloudformation</a>.
+            </p>
 
-              <h3 class="govuk-heading-m">Wipe the sandbox</h3>
-            <p class="govuk-body">Users are responsible for wiping the sandbox after any project type ensuring no data or infrastructure is left behind. 
-              If this is not done, then the PCT will introduce a forced sandbox wipe every week via a lambda script. We will also run cost checks daily to 
+            <h3 class="govuk-heading-m">Wipe the sandbox</h3>
+            <p class="govuk-body">Users are responsible for wiping the sandbox after any project type ensuring no data
+              or infrastructure is left behind.
+              If this is not done, then the PCT will introduce a forced sandbox wipe every week via a lambda script. We
+              will also run cost checks daily to
               ensure that users are not spending unnecessary on the account. </p>
 
-              <h3 class="govuk-heading-m">Lambda script</h3>
-              <p class="govuk-body">The PCT have implemented a script that auto tags resources users have created with their arn (this shows your username) and 
-                the date/time when they are created. This allows the PCT to see activity in the Sandbox account, including which sandboxes have not been wiped. </p>
-  
-          
+            <h3 class="govuk-heading-m">Lambda script</h3>
+            <p class="govuk-body">The PCT have implemented a script that auto tags resources users have created with
+              their arn (this shows your username) and
+              the date/time when they are created. This allows the PCT to see activity in the Sandbox account, including
+              which sandboxes have not been wiped. </p>
+
+
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
 
