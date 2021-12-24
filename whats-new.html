@@ -392,8 +392,7 @@
             </a>
           </div>
 
-          <ul class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav "
-            aria-label="Cloud services">
+          <ul class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav " aria-label="Cloud services">
             <li class="app-mobile-nav__subnav-item">
               <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="public-cloud-services.html">
                 Cloud services overview
@@ -467,32 +466,92 @@
           </ul>
 
         </li>
+
         <li>
           <div class="app-mobile-nav-subnav-toggler">
+            <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler"
+              href="public-cloud-services.html">
+              > Cloud support
+            </a>
+          </div>
+
+          <ul class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav " aria-label="Cloud services">
+            <li class="app-mobile-nav__subnav-item">
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="cloud-support.html">
+                Cloud support overview
+              </a>
+            </li>
+
+            <li>
+
+              <h4 class="app-mobile-nav__theme">Cloud support</h4>
+
+              <ul class="app-mobile-nav__list">
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                    href="cloud-vending-support.html">
+                    Cloud Vending Team support
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="aws-support.html">
+                    AWS support
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="azure-support.html">
+                    Microsoft Azure support
+                  </a>
+                </li>
+
+                <li class="app-mobile-nav__subnav-item">
+                  <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="faq.html">
+                    FAQ
+                  </a>
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li>
+          <div class="app-mobile-nav-subnav-toggler app-mobile-nav__subnav-toggler--active">
             <a class="govuk-link govuk-link--no-visited-state app-mobile-nav-subnav-toggler__link js-mobile-nav-subnav-toggler"
               href="whats-new.html">
               > What's new
             </a>
           </div>
 
-          <ul class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav "
+          <ul
+            class="app-mobile-nav__list app-mobile-nav__subnav js-app-mobile-nav-subnav app-mobile-nav__subnav--active"
             aria-label="Cloud services">
-
-            <li class="app-mobile-nav__subnav-item">
+            <li class="app-mobile-nav__subnav-item app-mobile-nav__subnav-item--current">
               <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="whats-new.html">
                 What's new most recent updates
               </a>
             </li>
+
+            <li class="app-mobile-nav__subnav-item">
+              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link"
+                href="whats-new-september-october.html">
+                September - November 2021 updates
+              </a>
+            </li>
+
             <li class="app-mobile-nav__subnav-item">
               <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="whats-new-july-august.html">
                 July - August 2021 updates
               </a>
             </li>
-            <li class="app-mobile-nav__subnav-item">
-              <a class="govuk-link govuk-link--no-visited-state app-mobile-nav__link" href="whats-new-september-october.html">
-                September - November 2021 updates
-              </a>
-            </li>
+
+          </ul>
+
+        </li>
 
       </ul>
     </nav>
@@ -536,7 +595,8 @@
         <li class="app-navigation__list-item">
           <a class="govuk-link govuk-link--no-visited-state app-navigation__link" href="cloud-support.html"
             data-topnav="Patterns">Cloud support</a>
-        </li>      </ul>
+        </li>
+      </ul>
     </nav>
     <!-- End of top nav -->
 
@@ -552,11 +612,13 @@
                 December 2021</a>
             </li>
             <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="whats-new-september-october.html">September -
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
+                href="whats-new-september-october.html">September -
                 October 2021</a>
             </li>
             <li class="app-subnav__section-item">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="whats-new-july-august.html">July - August
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="whats-new-july-august.html">July
+                - August
                 2021</a>
             </li>
           </ul>
@@ -598,9 +660,14 @@
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Cloud training</th>
                     <td class="govuk-table__cell">
-                      <p class="govuk-body">Updated the AWS training section. We replaced the upcoming AWS courses section with <a href="aws-embrace.html">AWS embrace platform</a>.</p>
-                      <p class="govuk-body">Added the <a href="/aws-training-and-learning.html">AWS training and learning page</a> which includes information on the new skills builder training and AWS game days</p>
-                      <p class="govuk-body">Updated the <a href="/enterprise-skills-initiative.html">Azure Enterprise Skills Initiative (ESI) training page</a>. We removed the Azure upcoming courses, and you should use ESI platform for all your Azure training</p>
+                      <p class="govuk-body">Updated the AWS training section. We replaced the upcoming AWS courses
+                        section with <a href="aws-embrace.html">AWS embrace platform</a>.</p>
+                      <p class="govuk-body">Added the <a href="/aws-training-and-learning.html">AWS training and
+                          learning page</a> which includes information on the new skills builder training and AWS game
+                        days</p>
+                      <p class="govuk-body">Updated the <a href="/enterprise-skills-initiative.html">Azure Enterprise
+                          Skills Initiative (ESI) training page</a>. We removed the Azure upcoming courses, and you
+                        should use ESI platform for all your Azure training</p>
                       <p class="govuk-body">Added the <a href="aws-embrace.html">cloud skills challenge page</a></p>
                     </td>
                   </tr>
@@ -613,17 +680,22 @@
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Cloud services</th>
                     <td class="govuk-table__cell">
-                      <p class="govuk-body">Updated <a href="who-can-raise-tickets.html">who can raise tickets</a>, <a href="account-roles-and-approvers.html">account roles and approvers</a> and <a href="how-to-create-an-iam-request.html">how to create an IAM request page</a>. 
+                      <p class="govuk-body">Updated <a href="who-can-raise-tickets.html">who can raise tickets</a>, <a
+                          href="account-roles-and-approvers.html">account roles and approvers</a> and <a
+                          href="how-to-create-an-iam-request.html">how to create an IAM request page</a>.
                         This includes more detailed information to make raising tickets easier.</p>
-                      <p class="govuk-body">Added <a href="how-to-avoid-common-delays.html">how to avoid common delays</a> for IAM ticket guidance</p>
-                      <p class="govuk-body">Added <a href="New-user-next-steps.html">new user next steps</a> new user next steps for IAM ticket guidance</p>
+                      <p class="govuk-body">Added <a href="how-to-avoid-common-delays.html">how to avoid common
+                          delays</a> for IAM ticket guidance</p>
+                      <p class="govuk-body">Added <a href="New-user-next-steps.html">new user next steps</a> new user
+                        next steps for IAM ticket guidance</p>
 
                     </td>
                   </tr>
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">General updates</th>
                     <td class="govuk-table__cell">
-                      <p class="govuk-body">Updated the reflow on all pages to make the site more accessible when zooming in to 400%</p>
+                      <p class="govuk-body">Updated the reflow on all pages to make the site more accessible when
+                        zooming in to 400%</p>
                     </td>
                   </tr>
                 </tbody>
