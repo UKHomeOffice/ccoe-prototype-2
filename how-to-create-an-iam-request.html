@@ -575,19 +575,19 @@
           <ul class="app-subnav__section">
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="who-can-raise-tickets.html">Who
-                can raise tickets</a>
+                can create an AWS IAM ticket</a>
             </li>
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
                 href="account-roles-and-approvers.html">Account roles and approvers</a>
             </li>
-            <li class="app-subnav__section-item app-subnav__section-item--current">
-              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                href="how-to-create-an-iam-request.html">How to create an IAM request</a>
-            </li>
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
                 href="how-to-avoid-common-delays.html">How to avoid common delays</a>
+            </li>
+            <li class="app-subnav__section-item app-subnav__section-item--current">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
+                href="how-to-create-an-iam-request.html">How to create an AWS IAM ticket</a>
             </li>
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="New-user-next-steps.html">New
@@ -625,35 +625,44 @@
                   <a class="govuk-breadcrumbs__link" href="public-cloud-services.html">Cloud services</a>
                 </li>
                 <li class="govuk-breadcrumbs__list-item">
-                  <a class="govuk-breadcrumbs__link" href="how-to-create-an-iam-request.html">How to create an IAM
-                    request</a>
+                  <a class="govuk-breadcrumbs__link" href="how-to-create-an-iam-request.html">How to create an AWS IAM
+                    ticket</a>
                 </li>
             </div>
 
             <span class="govuk-caption-xl">AWS IAM account requests</span>
-            <h1 class="govuk-heading-xl">How to create an IAM request</h1>
-            <p class="govuk-body">Things to remember when raising an IAM ticket: </p>
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-              <li>Provide as much detail as possible for each ticket</li>
-              <li>Failing to give us enough information could result in a delay in your request </li>
-              <li>The Cloud Vending Team will only be able to work from the information you provide in the ticket, it is
+            <h1 class="govuk-heading-xl">How to create an AWS IAM ticket</h1>
+
+            <p class="govuk-body">Things to remember when creating an Amazon Web Services (AWS) Identity and Access
+              Management (IAM) ticket:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>provide as much detail as possible for each ticket</li>
+              <li>failing to give us enough information could result in a delay in your request</li>
+              <li>the Cloud Vending Team will only be able to work from the information you provide in the ticket, it is
                 not our responsibility nor is it secure or appropriate for us to guess what is required</li>
             </ul>
 
-            <p class="govuk-body">Below is an example of how to raise a request to create a new user in the cloud.
-              However, the same steps
-              can be applied to all the ticket types.</p>
+            <p class="govuk-body">Once your AWS IAM ticket has been actioned by the Cloud Vending Team, there is
+              information available on <a href="New-user-next-steps.html">what to do next for new users</a>.</p>
+
+            <p class="govuk-body">Below is an example of how to create a ticket requesting access for a new user in the
+              cloud. However, the same steps can be applied to all the ticket types.</p>
 
             <ol class="govuk-list govuk-list--number govuk-list--spaced">
               <li>Visit the <a
                   href="https://collaboration.homeoffice.gov.uk/jira/secure/RapidBoard.jspa?rapidView=1756">Jira Kanban
-                  board</a> and click the ‘Create’ button in the top right corner</li>
+                  board</a> and click the ‘Create’ button in the top right corner.</li>
               <img src="images/Step1.png" style="border: solid" alt="How to create a ticket">
-              <li>Next select the Issue Type - AWS Account Change Request</li>
+
+              <li>Select ‘AWS Account Change Request’ as the issue type. This is used for all AWS IAM tickets.</li>
               <img src="images/Issuetype-440x215.png" style="border: solid; max-width: 500px;" alt="Select issue type">
-              <li>Choose the appropriate ticket type depending on your request e.g. New User, Reset Password, Delete
-                User etc.</li>
+
+              <li>Choose the appropriate ticket type. Is this for a new user to get access to the cloud, have you
+                forgotten your password or are you an existing user and want to get access to the sandbox. You would
+                select ‘New Access for Existing User’ in the last example.</li>
               <img src="images/request_type-268x200.png" style="border: solid; max-width: 500px;" alt="Request type">
+
               <li>Please fill in as much useful details as possible as this will help us complete the ticket as quick as
                 we can. See the example below for a new user request.</li>
               <p class="govuk-body">Most ticket types require approval but if you are unsure that you need approval,
@@ -662,12 +671,13 @@
                 ‘@digital.homeoffice.gov.uk’ email address you must provide us with their GPG key. We need this to
                 encrypt their credentials before sending them out.</p>
               <img src="images/example_request.png" style="border: solid" alt="Example IAM request">
+
               <li>Once your ticket has been raised, a memeber of the Cloud Vending Team will pick up the ticket and
                 notify you when it has been completed.</li>
+
               <li>If a member of the Cloud Vending Team comments on the ticket requesting more information, and you do
-                not reply within 7 days,
-                the ticket will be commented on again and progressed into ‘Done’. You can still comment on the ticket
-                afterwards. </li>
+                not reply within 7 days, the ticket will be commented on again and progressed into ‘Done’. You can still
+                comment on the ticket afterwards.</li>
             </ol>
 
             <!-- Hidden back to nav link </a> -->

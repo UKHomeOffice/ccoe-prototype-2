@@ -575,7 +575,7 @@
           <ul class="app-subnav__section">
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="who-can-raise-tickets.html">Who
-                can raise tickets</a>
+                can create an AWS IAM ticket</a>
             </li>
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
@@ -583,11 +583,11 @@
             </li>
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                href="how-to-create-an-iam-request.html">How to create an IAM request</a>
+                href="how-to-avoid-common-delays.html">How to avoid common delays</a>
             </li>
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state"
-                href="how-to-avoid-common-delays.html">How to avoid common delays</a>
+                href="how-to-create-an-iam-request.html">How to create an AWS IAM ticket</a>
             </li>
             <li class="app-subnav__section-item">
               <a class="app-subnav__link govuk-link govuk-link--no-visited-state" href="New-user-next-steps.html">New
@@ -627,17 +627,19 @@
             </div>
 
             <h1 class="govuk-heading-xl">Cloud services</h1>
+            <p class="govuk-body">Contents:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a href="#aws_iam_account_requests" class="govuk-link">AWS IAM account requests</a></li>
+              <li><a href="#sandbox" class="govuk-link">Sandbox</a></li>
+            </ul>
 
-            <!-- Start of training in the ho section -->
+            <p class="govuk-body">Here, you will find the cloud services the Cloud Vending Team provide. The most used
+              service is the Amazon Web Services (AWS) Identity and Access Management (IAM) account requests. Users
+              create a ticket on the Jira Kanban board which is then completed by a member of the Cloud Vending Team.
+              There are a few steps required to create a ticket, all details are available in the following pages.</p>
 
-            <h2 id="section1" class="govuk-heading-l">AWS IAM account requests</h2>
-            <p class="govuk-body">
-              Here, you will find Cloud services.
-              Our most used service is the Amazon Web Services (AWS) Identity and Access Management (IAM) account
-              requests. This is managed
-              by the Cloud Vending Team. See the <a href="how-to-create-an-iam-request.html">how to create an IAM
-                request</a> if you need to make changes to your AWS account including:
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <p class="govuk-body">Examples of why you may need to create an AWS IAM ticket are:</p>
+            <ul class="govuk-list govuk-list--bullet">
               <li>creating cloud accounts</li>
               <li>modifying cloud accounts</li>
               <li>deleting cloud accounts</li>
@@ -645,15 +647,55 @@
               <li>resetting passwords</li>
               <li>deleting Multi-Factor Authentication (MFA)</li>
             </ul>
-            </p>
+
+            <p class="govuk-body">The other service available to you is the Sandbox. Here you will find out the best
+              practices and how to access it. The request process to get access involves creating an IAM ticket.</p>
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-            <h2 id="section1" class="govuk-heading-l">Sandbox</h2>
-            <p class="govuk-body">
-              The <a href="sandbox-best-practices.html">sandbox best practices </a> explains what a sandbox is and how
-              to use sandboxes.
-              The <a href="sandbox-access.html">sandbox access</a> explains how to access an AWS sandbox.</p>
+            <h2 id="aws_iam_account_requests" class="govuk-heading-l">AWS IAM account requests</h2>
+            <ul class="govuk-list govuk-list--spaced">
+              <li>
+                <a class="govuk-link" href="who-can-raise-tickets.html">Who can create an AWS IAM ticket</a> - to start
+                with you need to understand who can create an AWS IAM ticket, the Cloud Vending Team action and close
+                tickets but do not create them
+              </li>
+              <li>
+                <a class="govuk-link" href="account-roles-and-approvers.html">Account roles and approvers</a> - discover
+                how many different ticket types there are, and which of these do require approval and who can approve
+                them
+              </li>
+              <li>
+                <a class="govuk-link" href="how-to-avoid-common-delays.html">How to avoid common delays</a> - the Cloud
+                Vending Team can only action a ticket that has all the appropriate information available, see how to
+                avoid a delay on your ticket
+              </li>
+              <li>
+                <a class="govuk-link" href="how-to-create-an-iam-request.html">How to create an AWS IAM ticket</a> - see the
+                steps required to create an AWS IAM ticket, screen shots are visible for guidance but please make sure
+                you read each step
+              </li>
+              <li>
+                <a class="govuk-link" href="New-user-next-steps.html">New user next steps</a> - find the actions to take
+                once you have received your credentials to access AWS IAM
+              </li>
+            </ul>
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            <h2 id="sandbox" class="govuk-heading-l">Sandbox</h2>
+
+            <ul class="govuk-list govuk-list--spaced">
+              <li>
+                <a class="govuk-link" href="sandbox-best-practices.html">Sandbox best practices</a> - explains what a
+                sandbox is and how to use sandboxes
+              </li>
+              <li>
+                <a class="govuk-link" href="sandbox-access.html">Sandbox access</a> - explains how to access an AWS
+                sandbox
+              </li>
+            </ul>
+
 
             <!-- Hidden back to nav link </a> -->
             <a href="#side-nav" class="govuk-skip-link">Back to side navigation</a>
