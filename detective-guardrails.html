@@ -709,11 +709,13 @@
 
             <span class="govuk-caption-xl">Operational excellence</span>
             <h1 class="govuk-heading-xl">Detective guardrails</h1>
+
             <p class="govuk-body">This page is for Amazon Web Services (AWS) Identity and Access Management (IAM) Home
               Office cloud users who want to understand what alerting we apply through AWS Guardrails in AWS accounts.
             </p>
+
             <p class="govuk-body">This content explains:</p>
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <ul class="govuk-list govuk-list--bullet">
               <li><a href="#detective_guardrails" class="govuk-link">what detective guardrails are</a></li>
               <li><a href="#implement_guardrails" class="govuk-link">how to implement detective guardrails</a></li>
               <li><a href="#detective_OU_mapping" class="govuk-link">OU mapping</a></li>
@@ -744,15 +746,18 @@
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
             <h2 id="implement_guardrails" class="govuk-heading-l">Implement detective guardrails</h2>
+
             <p class="govuk-body">To implement detective guardrails, you need <a
                 href="https://aws.amazon.com/config/">AWS Config</a> and an active Config recorder in each AWS account.
               You can then implement the rules in one of two ways.</p>
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+
+            <ul class="govuk-list govuk-list--number">
               <li>Deploy AWS Config rules to accounts through a service such as <a
                   href="https://aws.amazon.com/cloudformation/">AWS CloudFormation</a> aligned to specific OUs.</li>
               <li>Use <a git href="https://aws.amazon.com/security-hub/">AWS Security Hub</a> to act as a central
                 dashboard, with each AWS account added as a child account within Security Hubs.</li>
             </ul>
+
             <p class="govuk-body">Security Hub comes with security standards that can be deployed for both the Center
               for Internet Security (CIS) AWS Foundation Benchmark and AWS Foundational Security Best Practices
               standard. This automatically deploys the relevant Config rules and other checks that extend beyond those
@@ -800,8 +805,7 @@
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
 
             <h2 id="future_guardrails" class="govuk-heading-l">Proposed and future guardrails </h2>
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-
+            <ul class="govuk-list govuk-list--spaced">
               <li><a
                   href="https://collaboration.homeoffice.gov.uk/display/CLOUD/Detective+-+Proposed+and+future+guardrails">Proposed
                   detective guardrails and future guardrails</a></li>

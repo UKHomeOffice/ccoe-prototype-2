@@ -694,9 +694,10 @@
 
             <span class="govuk-caption-xl">Operational excellence</span>
             <h1 class="govuk-heading-xl">Tagging standards</h1>
+
             <p class="govuk-body">This content explains:</p>
 
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <ul class="govuk-list govuk-list--bullet">
               <li><a href="#tag_explanation" class="govuk-link">what a tag is</a></li>
               <li><a href="#tag_standard" class="govuk-link">why we want a tagging standard</a></li>
               <li><a href="#HO_tags" class="govuk-link">Home Office mandatory tags</a></li>
@@ -722,9 +723,10 @@
 
             <h3 class="govuk-heading-m">AWS best practices</h3>
             <p class="govuk-body">It's always best to incorporate AWS best practice when creating a tagging strategy.
-              Some examples are:</p>
+            </p>
 
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <p class="govuk-body">Some examples are:</p>
+            <ul class="govuk-list govuk-list--bullet">
               <li>
                 do not store personally identifiable information (PII) or other confidential or sensitive information in
                 tags
@@ -747,22 +749,23 @@
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
             <h2 id="tag_standard" class="govuk-heading-l">Why do we want a tagging standard?</h2>
+
             <p class="govuk-body">The Cloud Vending Team want to be able to track each resource back to the
               owner/department or project. Having a set of mandatory tags on every resource (case sensitive) makes it
               uniform, professional and searchable. It will also help when we need to search through logs to identify a
               resource.</p>
 
             <h3 class="govuk-heading-m">Current problems:</h3>
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <ul class="govuk-list govuk-list--bullet">
               <li>
-                there is no governance on what tags are used because each department has control. This makes it
+                there is no governance on what tags are used because each department has control, and this makes it
                 difficult to trace
               </li>
               <li>
                 it is difficult for billing to accurately charge back to each department for their usage
               </li>
               <li>
-                it is difficult to provide support. For example, if we identify an underutilised EC2 instance without
+                it is difficult to provide support; for example, if we identify an underutilised EC2 instance without
                 clear tags, it makes it difficult to find the department responsible
               </li>
               <li>
@@ -797,10 +800,10 @@
                 </div>
                 <div id="accordion-default-content-1" class="govuk-accordion__section-content"
                   aria-labelledby="accordion-default-heading-1">
-                  <p class='govuk-body'>This tag is used to allocate costs to.</p>
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                    <li>Tag formatting - "0000000" 8 numeric characters</li>
-                    <li>Example tag values - 01815042</li>
+                  <p class='govuk-body'>This tag is used to allocate costs to:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>tag formatting - "0000000" 8 numeric characters</li>
+                    <li>example tag values - 01815042</li>
                   </ul>
                 </div>
               </div>
@@ -815,10 +818,10 @@
                 </div>
                 <div id="accordion-default-content-2" class="govuk-accordion__section-content"
                   aria-labelledby="accordion-default-heading-2">
-                  <p class='govuk-body'>Environment name standards e.g. "prod", "dev".</p>
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                    <li>Tag formatting - lowercase alphanumerical </li>
-                    <li>Example tag values - "prod" or "dev" or "test" or "sit" or "qat" or "sandbox"</li>
+                  <p class='govuk-body'>Environment name standards e.g. "prod", "dev":</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>tag formatting - lowercase alphanumerical </li>
+                    <li>example tag values - "prod" or "dev" or "test" or "sit" or "qat" or "sandbox"</li>
                 </div>
               </div>
 
@@ -832,9 +835,10 @@
                 </div>
                 <div id="accordion-default-content-3" class="govuk-accordion__section-content"
                   aria-labelledby="accordion-default-heading-3">
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                    <li>Tag formatting - numerical</li>
-                    <li>Example tag values - "01"</li>
+                  <p class='govuk-body'>Considerations are:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>tag formatting - numerical</li>
+                    <li>example tag values - "01"</li>
                 </div>
               </div>
 
@@ -849,11 +853,10 @@
                 <div id="accordion-default-content-4" class="govuk-accordion__section-content"
                   aria-labelledby="accordion-default-heading-4">
                   <p class='govuk-body'>This is a programmatic tag joining up 4 user defined tags in order to produce a
-                    unique tag
-                    reference.</p>
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                    <li>Tag formatting - programmatic "(PROJECTID_ENV_SERVICENAME_ID)"</li>
-                    <li>Example tag values - "publiccloud_prod_backupdb_01"</li>
+                    unique tag reference:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>tag formatting - programmatic "(PROJECTID_ENV_SERVICENAME_ID)"</li>
+                    <li>example tag values - "publiccloud_prod_backupdb_01"</li>
                 </div>
               </div>
 
@@ -867,10 +870,10 @@
                 </div>
                 <div id="accordion-default-content-4" class="govuk-accordion__section-content"
                   aria-labelledby="accordion-default-heading-4">
-                  <p class='govuk-body'>This is a Poise ID or digital username.</p>
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                    <li>Tag formatting - lowercase alphanumeric (Poise ID only)</li>
-                    <li>Example tag values - "mussas1"</li>
+                  <p class='govuk-body'>This is a Poise ID or digital username:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>tag formatting - lowercase alphanumeric (Poise ID only)</li>
+                    <li>example tag values - "mussas1"</li>
                 </div>
               </div>
 
@@ -884,9 +887,10 @@
                 </div>
                 <div id="accordion-default-content-4" class="govuk-accordion__section-content"
                   aria-labelledby="accordion-default-heading-4">
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                    <li>Tag formatting - lowercase alphanumeric (Poise ID only)</li>
-                    <li>Example tag values - "public_cloud" "service_now"</li>
+                  <p class='govuk-body'>Considerations are:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>tag formatting - lowercase alphanumeric (Poise ID only)</li>
+                    <li>example tag values - "public_cloud" "service_now"</li>
                 </div>
               </div>
 
@@ -900,12 +904,10 @@
                 </div>
                 <div id="accordion-default-content-4" class="govuk-accordion__section-content"
                   aria-labelledby="accordion-default-heading-4">
-                  <p class='govuk-body'>This Normally the service tag is being applied on a resource, whether its
-                    Backup Service
-                    or a Bastion Host.</p>
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                    <li>Tag formatting - lowercase alphanumeric</li>
-                    <li>Example tag values "backupdb" "proxy1"</li>
+                  <p class='govuk-body'>This Normally the service tag is being applied on a resource, whether it's Backup Service or a Bastion Host:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>tag formatting - lowercase alphanumeric</li>
+                    <li>example tag values "backupdb" "proxy1"</li>
                 </div>
               </div>
 
@@ -919,10 +921,10 @@
                 </div>
                 <div id="accordion-default-content-4" class="govuk-accordion__section-content"
                   aria-labelledby="accordion-default-heading-4">
-                  <p class='govuk-body'>We should only be building resources in eu-west-2.</p>
-                  <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
-                    <li>Tag formatting - lowercase alphanumeric (Poise ID only)</li>
-                    <li>Example tag values - "eu-west-2"</li>
+                  <p class='govuk-body'>We should only be building resources in eu-west-2:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>tag formatting - lowercase alphanumeric (Poise ID only)</li>
+                    <li>example tag values - "eu-west-2"</li>
                 </div>
               </div>
 
