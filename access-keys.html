@@ -756,29 +756,35 @@
 
             <h2 id="policy" class="govuk-heading-l">Home Office access key policy</h2>
 
-            <ul class="govuk-list govuk-list--spaced">
-              <li>The Cloud Vending Team are implementing the following policy for access keys, to reduce the risks to
-                the Home Office.
-                We will not force business areas to follow the policy. The policy allows us to highlight where there are
-                potential risks in the organisation.</li>
-              <li>Only create AWS access keys where there is a clear need for programmatic access.</li>
-              <li>Use temporary access keys when possible.</li>
-              <li>Rotate access keys at least every 90 days.</li>
-              <li>Never share an access key with people that do not need it.</li>
-              <li>Store access keys securely and approved as part of a service's security assurance.</li>
-              <li>Do not embed access keys directly into code or repositories.</li>
-              <li>Tools provided by the AWS SDK and command line tools (for example, AWS credentials file) should be
-                used instead. For more information, see the <a
+            <p class="govuk-body">The Cloud Vending Team are implementing the following policy for access keys, to
+              reduce the risks to the Home Office. We will not force business areas to follow the policy. The policy
+              allows us to highlight where there are potential risks in the organisation.</p>
+
+            <p class="govuk-body">Please adhere to the following points:</p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li>only create AWS access keys where there is a clear need for programmatic access</li>
+              <li>use temporary access keys when possible</li>
+              <li>rotate access keys every 90 days</li>
+              <li>never share an access key with people that do not need it</li>
+              <li>store access keys securely and approved as part of a service's security assurance</li>
+              <li>do not embed access keys directly into code or repositories</li>
+              <li>tools provided by the AWS SDK and command line tools (for example, AWS credentials file) should be
+                used instead and for more information, see the <a
                   href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html">AWS
-                  documentation for using temporary credentials</a>.</li>
-              <li>If an AWS access key is published to the internet (for example, GitHub), shared or lost you should
-                follow the relevant incident management process. You should notify the <a
-                  href="mailto:public.cloud@homeoffice.gov.uk">public.cloud@homeoffice.gov.uk</a> immediately. Make the
-                affected access key inactive and delete it.</li>
-              <li>You should limit permissions for individual users, services or applications using AWS access keys. You
-                should base access on least privilege and regularly review access. Administrative permissions should be
-                given as a last resort.</li>
-              <li>Any IAM user that has programmatic access must enable Multi Factor Authentication (MFA).</li>
+                  documentation for using temporary credentials</a></li>
+              <li>if an AWS access key is published to the internet (for example, GitHub), shared or lost you should
+                follow the relevant incident management process:
+                <ul>
+                  <li>you should notify the <a
+                      href="mailto:public.cloud@homeoffice.gov.uk">public.cloud@homeoffice.gov.uk</a> immediately</li>
+                  <li>make the affected access key inactive and delete it</li>
+                </ul>
+              </li>
+              <li>you should limit permissions for individual users, services or applications using AWS access keys</li>
+              <li>you should base access on least privilege and regularly review access</li>
+              <li>administrative permissions should be given as a last resort</li>
+              <li>any IAM user that has programmatic access must enable Multi Factor Authentication (MFA)</li>
             </ul>
 
             <!-- Hidden back to nav link </a> -->
